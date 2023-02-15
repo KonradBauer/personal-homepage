@@ -2,8 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   body {
-    margin: 0;
-    padding: 0;
-    background: #E5E5E5;
+    background: #FFFFFF;
+    font-family: 'Inter', sans-serif;
   }
 `;
