@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
+  background: ${({ theme }) => theme.color.white};
   max-width: 1216px;
   height: 404px;
-  border: solid 1px black;
   margin: auto;
   position: absolute;
   width: 1216px;
