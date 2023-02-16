@@ -72,7 +72,7 @@ export const ButtonHireMe = styled.button`
   position: absolute;
   width: 154px;
   height: 49px;
-  left: 650px;
+  left: 809px;
   top: 381px;
   border: 1px solid rgba(209, 213, 218, 0.3);
   border-radius: 4px;
