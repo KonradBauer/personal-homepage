@@ -20,8 +20,8 @@ function App() {
           <ThisIs>This is</ThisIs>
           <MyName>Konrad Bauer</MyName>
           <AboutMe>
-            I’m a passionate Frontend Developer in love with React,currently
-            looking for new job opportunities.
+            👨💻 I’m a passionate Frontend Developer in love with
+            React,currently looking for new job opportunities.
           </AboutMe>
           <ButtonHireMe>Hire me</ButtonHireMe>
         </Header>
