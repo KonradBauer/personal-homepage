@@ -35,3 +35,12 @@ export const Skills = styled.div`
   line-height: 140%;
   letter-spacing: 0.05em;
 `;
+
+export const ListItem = styled.li`
+  &::marker {
+    content: "•";
+    width: 9px;
+    height: 9px;
+    color: ${({ theme }) => theme.color.blue};
+  }
+`;
