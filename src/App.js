@@ -8,6 +8,8 @@ import {
   ButtonHireMe,
 } from "./Header/styled";
 import {
+  List,
+  ListItem,
   Skills,
   SkillsContainer,
   SkillsContainerTitle,
@@ -33,34 +35,34 @@ function App() {
         <SkillsContainer>
           <SkillsContainerTitle>My skillset includes 🛠️</SkillsContainerTitle>
           <Skills>
-            <ul>
-              <li>Semantic & accessible HTML</li>
-              <li>Responsive Web Design</li>
-              <li>Teamwork</li>
-              <li>Markdown</li>
-              <li>Immutability</li>
-              <li>CSS BEM convention</li>
-              <li>CSS Grid</li>
-              <li>CSS Flexbox</li>
-            </ul>
-            <ul>
-              <li>React Router</li>
-              <li>Redux-Saga</li>
-              <li>Redux (Toolkit)</li>
-              <li>React Hooks</li>
-              <li>Error handling</li>
-              <li>Working with API (fetch, axios)</li>
-              <li>JavaScript: ES6+</li>
-            </ul>
-            <ul>
-              <li>Promises, Async/Await</li>
-              <li>GitHub Pull Requests & Review</li>
-              <li>Trello</li>
-              <li>Scrum</li>
-              <li>NPM</li>
-              <li>React</li>
-              <li>Git</li>
-            </ul>
+            <List>
+              <ListItem>Semantic & accessible HTML</ListItem>
+              <ListItem>Responsive Web Design</ListItem>
+              <ListItem>Teamwork</ListItem>
+              <ListItem>Markdown</ListItem>
+              <ListItem>Immutability</ListItem>
+              <ListItem>CSS BEM convention</ListItem>
+              <ListItem>CSS Grid</ListItem>
+              <ListItem>CSS Flexbox</ListItem>
+            </List>
+            <List>
+              <ListItem>React Router</ListItem>
+              <ListItem>Redux-Saga</ListItem>
+              <ListItem>Redux (Toolkit)</ListItem>
+              <ListItem>React Hooks</ListItem>
+              <ListItem>Error handling</ListItem>
+              <ListItem>Working with API (fetch, axios)</ListItem>
+              <ListItem>JavaScript: ES6+</ListItem>
+            </List>
+            <List>
+              <ListItem>Promises, Async/Await</ListItem>
+              <ListItem>GitHub Pull Requests & Review</ListItem>
+              <ListItem>Trello</ListItem>
+              <ListItem>Scrum</ListItem>
+              <ListItem>NPM</ListItem>
+              <ListItem>React</ListItem>
+              <ListItem>Git</ListItem>
+            </List>
           </Skills>
         </SkillsContainer>
       </ThemeProvider>

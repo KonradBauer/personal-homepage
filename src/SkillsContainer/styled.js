@@ -36,11 +36,12 @@ export const Skills = styled.div`
   letter-spacing: 0.05em;
 `;
 
+export const List = styled.ul``;
+
 export const ListItem = styled.li`
   &::marker {
-    content: "•";
-    width: 9px;
-    height: 9px;
+    display: grid;
+    font-size: 30px;
     color: ${({ theme }) => theme.color.blue};
   }
 `;

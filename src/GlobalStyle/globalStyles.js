@@ -7,7 +7,7 @@ export const theme = {
     slateGray: "#6E7E91",
     black: "#252525",
     scienceBlue: "#0366D6",
-    Blue: "#2517EB",
+    blue: "#2517EB",
   },
 };
 
