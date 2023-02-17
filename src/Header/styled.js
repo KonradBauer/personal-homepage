@@ -5,6 +5,7 @@ export const Header = styled.div`
   height: 384px;
   margin: auto;
   margin-top: 119px;
+  border: solid 1px black;
 `;
 
 export const Photo = styled.img`
@@ -62,14 +63,14 @@ export const AboutMe = styled.text`
 `;
 
 export const ButtonHireMe = styled.button`
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 12px 16px;
   gap: 16px;
-  position: absolute;
+  margin: auto;
+  margin-top: 250px;
   width: 154px;
   height: 49px;
   left: 809px;
