@@ -26,5 +26,6 @@ export const SkillsContainerTitle = styled.text`
 `;
 
 export const Skills = styled.div`
-  margin-top: 116px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 `;
