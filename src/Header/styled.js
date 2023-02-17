@@ -69,7 +69,7 @@ export const ButtonHireMe = styled.button`
   padding: 12px 16px;
   gap: 16px;
   margin: auto;
-  margin-top: 250px;
+  margin-top: 381px;
   width: 154px;
   height: 49px;
   left: 809px;

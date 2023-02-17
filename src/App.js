@@ -7,7 +7,10 @@ import {
   AboutMe,
   ButtonHireMe,
 } from "./Header/styled";
-import { SkillsContainer } from "./SkillsContainer/styled";
+import {
+  SkillsContainer,
+  SkillsContainerTitle,
+} from "./SkillsContainer/styled";
 import image from "./images/konrad.png";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./GlobalStyle/globalStyles";
@@ -26,7 +29,9 @@ function App() {
           </AboutMe>
           <ButtonHireMe>Hire me</ButtonHireMe>
         </Header>
-        <SkillsContainer />
+        <SkillsContainer>
+          <SkillsContainerTitle>My skillset includes 🛠️</SkillsContainerTitle>
+        </SkillsContainer>
       </ThemeProvider>
     </>
   );
