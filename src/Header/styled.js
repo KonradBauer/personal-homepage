@@ -22,7 +22,6 @@ export const ThisIs = styled.text`
   height: 16px;
   left: calc(50% - 43px / 2 - 129.5px);
   top: 183px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -38,7 +37,6 @@ export const MyName = styled.text`
   left: calc(50% - 415px / 2 + 56.5px);
   top: 211px;
   color: ${({ theme }) => theme.color.black};
-  font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-size: 38px;
@@ -53,7 +51,6 @@ export const AboutMe = styled.text`
   left: calc(50% - 633px / 2 + 165.5px);
   top: 292px;
   color: ${({ theme }) => theme.color.slateGray};
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
