@@ -8,6 +8,7 @@ import {
   ButtonHireMe,
 } from "./Header/styled";
 import {
+  Skills,
   SkillsContainer,
   SkillsContainerTitle,
 } from "./SkillsContainer/styled";
@@ -31,6 +32,7 @@ function App() {
         </Header>
         <SkillsContainer>
           <SkillsContainerTitle>My skillset includes 🛠️</SkillsContainerTitle>
+          <Skills />
         </SkillsContainer>
       </ThemeProvider>
     </>
