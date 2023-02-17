@@ -73,6 +73,6 @@ export const ButtonHireMe = styled.button`
   top: 381px;
   border: 1px solid rgba(209, 213, 218, 0.3);
   border-radius: 4px;
-  background-color: ${({ theme }) => theme.color.ScienceBlue};
+  background-color: ${({ theme }) => theme.color.scienceBlue};
   color: ${({ theme }) => theme.color.white};
 `;

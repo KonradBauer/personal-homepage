@@ -6,7 +6,8 @@ export const theme = {
     mercury: "#E5E5E5",
     slateGray: "#6E7E91",
     black: "#252525",
-    ScienceBlue: "#0366D6",
+    scienceBlue: "#0366D6",
+    Blue: "#2517EB",
   },
 };
 
