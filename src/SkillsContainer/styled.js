@@ -24,3 +24,7 @@ export const SkillsContainerTitle = styled.text`
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
 `;
+
+export const Skills = styled.div`
+  margin-top: 116px;
+`;
