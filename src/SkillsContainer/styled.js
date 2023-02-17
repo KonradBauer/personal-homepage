@@ -28,4 +28,10 @@ export const SkillsContainerTitle = styled.text`
 export const Skills = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  color: ${({ theme }) => theme.color.slateGray};
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
 `;
