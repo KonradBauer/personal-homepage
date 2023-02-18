@@ -67,6 +67,20 @@ function App() {
         </SkillsContainer>
         <NextToLearnContainer>
           <ContainerTitle>What I want to learn next 🚀</ContainerTitle>
+          <Skills>
+            <List>
+              <ListItem>React Context</ListItem>
+              <ListItem>React Query</ListItem>
+            </List>
+            <List>
+              <ListItem>Cypress</ListItem>
+              <ListItem>Unit testing</ListItem>
+            </List>
+            <List>
+              <ListItem>TypeScript</ListItem>
+              <ListItem>Node.js</ListItem>
+            </List>
+          </Skills>
         </NextToLearnContainer>
       </ThemeProvider>
     </>

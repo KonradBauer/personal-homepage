@@ -4,7 +4,7 @@ export const SkillsContainer = styled.div`
   background: ${({ theme }) => theme.color.white};
   margin-top: 576px;
   max-width: 1216px;
-  height: 310px;
+  height: 404px;
   margin: auto;
   padding: 32px;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
@@ -26,7 +26,7 @@ export const ContainerTitle = styled.text`
 
 export const Skills = styled.div`
   display: grid;
-  margin-top: 15px;
+  margin-top: 48px;
   grid-template-columns: 1fr 1fr 1fr;
   color: ${({ theme }) => theme.color.slateGray};
   font-style: normal;
@@ -39,6 +39,8 @@ export const Skills = styled.div`
 export const List = styled.ul``;
 
 export const ListItem = styled.li`
+  margin-bottom: 8px;
+
   &::marker {
     display: grid;
     font-size: 30px;
