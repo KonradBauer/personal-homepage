@@ -30,7 +30,6 @@ function App() {
             👨💻 I’m a passionate Frontend Developer in love with
             React,currently looking for new job opportunities.
           </AboutMe>
-          <ButtonHireMe>Hire me</ButtonHireMe>
         </Header>
         <SkillsContainer>
           <SkillsContainerTitle>My skillset includes 🛠️</SkillsContainerTitle>
