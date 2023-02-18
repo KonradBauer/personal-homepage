@@ -12,7 +12,7 @@ export const SkillsContainer = styled.div`
   border-radius: 4px;
 `;
 
-export const SkillsContainerTitle = styled.text`
+export const ContainerTitle = styled.text`
   width: 328px;
   height: 36px;
   font-style: normal;

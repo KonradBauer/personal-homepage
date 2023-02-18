@@ -12,11 +12,12 @@ import {
   ListItem,
   Skills,
   SkillsContainer,
-  SkillsContainerTitle,
+  ContainerTitle,
 } from "./SkillsContainer/styled";
 import image from "./images/konrad.png";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./GlobalStyle/globalStyles";
+import { NextToLearnContainer } from "./NextToLearnContaier/styled";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
           </AboutMe>
         </Header>
         <SkillsContainer>
-          <SkillsContainerTitle>My skillset includes 🛠️</SkillsContainerTitle>
+          <ContainerTitle>My skillset includes 🛠️</ContainerTitle>
           <Skills>
             <List>
               <ListItem>Semantic & accessible HTML</ListItem>
@@ -64,6 +65,9 @@ function App() {
             </List>
           </Skills>
         </SkillsContainer>
+        <NextToLearnContainer>
+          <ContainerTitle>What I want to learn next 🚀</ContainerTitle>
+        </NextToLearnContainer>
       </ThemeProvider>
     </>
   );
