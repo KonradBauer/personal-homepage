@@ -5,6 +5,7 @@ export const Header = styled.div`
   height: 384px;
   margin: auto;
   margin-top: 119px;
+  margin-bottom: 73px;
 `;
 
 export const Photo = styled.img`
