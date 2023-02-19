@@ -6,7 +6,7 @@ import {
   MyName,
   AboutMe,
   ButtonHireMe,
-} from "./Header/styled";
+} from "./common/Header/styled";
 import {
   List,
   ListItem,
@@ -14,11 +14,12 @@ import {
   SkillsContainer,
   ContainerTitle,
   ContainerLine,
-} from "./SkillsContainer/styled";
-import image from "./images/konrad.png";
+} from "./common/SkillsContainer/styled";
+import image from "./common/images/konrad.png";
 import { ThemeProvider } from "styled-components";
-import { theme } from "./GlobalStyle/globalStyles";
-import { NextToLearnContainer } from "./NextToLearnContaier/styled";
+import { theme } from "./common/GlobalStyle/globalStyles";
+import { NextToLearnContainer } from "./common/NextToLearnContaier/styled";
+import { PortfolioContainer } from "./common/Portfolio/styled";
 
 function App() {
   return (
@@ -85,6 +86,7 @@ function App() {
             </List>
           </Skills>
         </NextToLearnContainer>
+        <PortfolioContainer></PortfolioContainer>
       </ThemeProvider>
     </>
   );
