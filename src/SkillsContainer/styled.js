@@ -24,6 +24,15 @@ export const ContainerTitle = styled.text`
   color: ${({ theme }) => theme.color.black};
 `;
 
+export const ContainerLine = styled.div`
+  margin-top: 15px;
+  width: 1151px;
+  height: 1px;
+  left: calc(50% - 1151px / 2 + 1.5px);
+  top: 659px;
+  background: rgba(209, 213, 218, 0.3); ;
+`;
+
 export const Skills = styled.div`
   display: grid;
   margin-top: 48px;

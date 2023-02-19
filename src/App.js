@@ -13,6 +13,7 @@ import {
   Skills,
   SkillsContainer,
   ContainerTitle,
+  ContainerLine,
 } from "./SkillsContainer/styled";
 import image from "./images/konrad.png";
 import { ThemeProvider } from "styled-components";
@@ -34,6 +35,7 @@ function App() {
         </Header>
         <SkillsContainer>
           <ContainerTitle>My skillset includes 🛠️</ContainerTitle>
+          <ContainerLine />
           <Skills>
             <List>
               <ListItem>Semantic & accessible HTML</ListItem>
@@ -67,6 +69,7 @@ function App() {
         </SkillsContainer>
         <NextToLearnContainer>
           <ContainerTitle>What I want to learn next 🚀</ContainerTitle>
+          <ContainerLine />
           <Skills>
             <List>
               <ListItem>React Context</ListItem>
