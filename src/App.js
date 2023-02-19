@@ -19,7 +19,11 @@ import image from "./common/images/konrad.png";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./common/GlobalStyle/globalStyles";
 import { NextToLearnContainer } from "./common/NextToLearnContaier/styled";
-import { PortfolioContainer } from "./common/Portfolio/styled";
+import {
+  PortfolioContainer,
+  PortfolioHeader,
+  PortfolioSubHeader,
+} from "./common/Portfolio/styled";
 
 function App() {
   return (
@@ -86,7 +90,10 @@ function App() {
             </List>
           </Skills>
         </NextToLearnContainer>
-        <PortfolioContainer></PortfolioContainer>
+        <PortfolioContainer>
+          <PortfolioHeader>Portfolio</PortfolioHeader>
+          <PortfolioSubHeader>My recent projects</PortfolioSubHeader>
+        </PortfolioContainer>
       </ThemeProvider>
     </>
   );
