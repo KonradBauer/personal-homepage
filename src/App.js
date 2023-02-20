@@ -24,6 +24,7 @@ import {
   PortfolioHeader,
   PortfolioSubHeader,
 } from "./common/Portfolio/styled";
+import { ReactComponent as GithubLogo } from "./common/svg/github.svg";
 
 function App() {
   return (
@@ -91,6 +92,7 @@ function App() {
           </Skills>
         </NextToLearnContainer>
         <PortfolioContainer>
+          <GithubLogo />
           <PortfolioHeader>Portfolio</PortfolioHeader>
           <PortfolioSubHeader>My recent projects</PortfolioSubHeader>
         </PortfolioContainer>
