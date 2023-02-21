@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Header,
-  Photo,
-  ThisIs,
-  MyName,
-  AboutMe,
-  ButtonHireMe,
-} from "./common/Header/styled";
+import { Header, Photo, ThisIs, MyName, AboutMe } from "./common/Header/styled";
 import {
   List,
   ListItem,
@@ -20,10 +13,10 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./common/GlobalStyle/globalStyles";
 import { NextToLearnContainer } from "./common/NextToLearnContaier/styled";
 import {
-  PortfolioContainer,
+  PortfolioHeadContainer,
   PortfolioHeader,
   PortfolioSubHeader,
-} from "./common/Portfolio/styled";
+} from "./common/Portfolio/PortfolioHeader/styled";
 import { ReactComponent as GithubLogo } from "./common/svg/github.svg";
 
 function App() {
@@ -91,11 +84,11 @@ function App() {
             </List>
           </Skills>
         </NextToLearnContainer>
-        <PortfolioContainer>
+        <PortfolioHeadContainer>
           <GithubLogo />
           <PortfolioHeader>Portfolio</PortfolioHeader>
           <PortfolioSubHeader>My recent projects</PortfolioSubHeader>
-        </PortfolioContainer>
+        </PortfolioHeadContainer>
       </ThemeProvider>
     </>
   );
