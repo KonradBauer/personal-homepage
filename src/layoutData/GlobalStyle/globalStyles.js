@@ -8,6 +8,8 @@ export const theme = {
     black: "#252525",
     scienceBlue: "#0366D6",
     blue: "#2517EB",
+    dodgerBlue: "#2188FF",
+    silver: "#C4C4C4",
   },
 };
 
