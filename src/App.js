@@ -1,5 +1,11 @@
 import React from "react";
-import { Header, Photo, ThisIs, MyName, AboutMe } from "./common/Header/styled";
+import {
+  Header,
+  Photo,
+  ThisIs,
+  MyName,
+  AboutMe,
+} from "./layoutData/Header/styled";
 import {
   List,
   ListItem,
@@ -7,17 +13,19 @@ import {
   SkillsContainer,
   ContainerTitle,
   ContainerLine,
-} from "./common/SkillsContainer/styled";
+} from "./layoutData/SkillsContainer/styled";
 import image from "./common/images/konrad.png";
 import { ThemeProvider } from "styled-components";
-import { theme } from "./common/GlobalStyle/globalStyles";
-import { NextToLearnContainer } from "./common/NextToLearnContaier/styled";
+import { theme } from "./layoutData/GlobalStyle/globalStyles";
+import { NextToLearnContainer } from "./layoutData/NextToLearnContaier/styled";
 import {
   PortfolioHeadContainer,
   PortfolioHeader,
   PortfolioSubHeader,
-} from "./common/Portfolio/PortfolioHeader/styled";
+} from "./layoutData/Portfolio/PortfolioHeader/styled";
 import { ReactComponent as GithubLogo } from "./common/svg/github.svg";
+import { PortfolioContent } from "./layoutData/Portfolio/PortfolioContent/styled";
+import { Tile } from "./layoutData/Portfolio/Tile/styled";
 
 function App() {
   return (
@@ -89,6 +97,14 @@ function App() {
           <PortfolioHeader>Portfolio</PortfolioHeader>
           <PortfolioSubHeader>My recent projects</PortfolioSubHeader>
         </PortfolioHeadContainer>
+        <PortfolioContent>
+          <Tile />
+          <Tile />
+          <Tile />
+          <Tile />
+          <Tile />
+          <Tile />
+        </PortfolioContent>
       </ThemeProvider>
     </>
   );
