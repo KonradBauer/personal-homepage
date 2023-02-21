@@ -104,7 +104,9 @@ function App() {
             </Skills>
           </NextToLearnContainer>
           <PortfolioHeadContainer>
-            <GithubLogo />
+            <a href="https://github.com/KonradBauer">
+              <GithubLogo />
+            </a>
             <PortfolioHeader>Portfolio</PortfolioHeader>
             <PortfolioSubHeader>My recent projects</PortfolioSubHeader>
           </PortfolioHeadContainer>
@@ -126,8 +128,12 @@ function App() {
               <Hand />
             </Info>
             <Logos>
-              <GithubBlack />
-              <LinkedInBlack />
+              <a href="https://github.com/KonradBauer">
+                <GithubBlack />
+              </a>
+              <a href="www.linkedin.com/in/konrad-bauer">
+                <LinkedInBlack />
+              </a>
             </Logos>
           </SocialContainer>
         </GlobalContainer>
