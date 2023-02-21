@@ -9,10 +9,7 @@ export const SocialContainer = styled.div`
 `;
 
 export const LetsTalk = styled.text`
-  width: 43px;
   height: 16px;
-  top: 183px;
-  left: calc(50% - 43px / 2 - 129.5px);
   font-style: normal;
   font-weight: 700;
   font-size: 12px;

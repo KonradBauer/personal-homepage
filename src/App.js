@@ -119,7 +119,7 @@ function App() {
             <Tile />
           </PortfolioContent>
           <SocialContainer>
-            <LetsTalk>Let's Talk</LetsTalk>
+            <LetsTalk>Let’s talk!</LetsTalk>
             <Email>konradbauer94@gmail.com</Email>
             <Info>
               I’m always open to new projects whenever I have the time. If you
