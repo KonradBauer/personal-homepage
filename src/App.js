@@ -25,12 +25,15 @@ import {
 } from "./layoutData/Portfolio/PortfolioHeader/styled";
 import { ReactComponent as GithubLogo } from "./common/svg/github.svg";
 import { ReactComponent as Hand } from "./common/svg/hand.svg";
+import { ReactComponent as GithubBlack } from "./common/svg/githubBlack.svg";
+import { ReactComponent as LinkedInBlack } from "./common/svg/linkedinBlack.svg";
 import { PortfolioContent } from "./layoutData/Portfolio/PortfolioContent/styled";
 import { Tile } from "./layoutData/Portfolio/Tile/styled";
 import {
   Email,
   Info,
   LetsTalk,
+  Logos,
   SocialContainer,
 } from "./layoutData/Social/styled";
 
@@ -121,6 +124,10 @@ function App() {
             to make your ideas come to life, feel free to conatct me
             <Hand />
           </Info>
+          <Logos>
+            <GithubBlack />
+            <LinkedInBlack />
+          </Logos>
         </SocialContainer>
       </ThemeProvider>
     </>

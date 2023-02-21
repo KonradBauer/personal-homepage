@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const SocialContainer = styled.div`
+  margin-left: 352px;
   margin-top: 120px;
   width: 691px;
   height: 282px;
   left: 352px;
-  border: solid 1px black;
 `;
 
 export const LetsTalk = styled.text`
@@ -30,10 +30,13 @@ export const Email = styled.text`
   font-size: 32px;
   line-height: 39px;
   letter-spacing: 0.05em;
-  width: 691px;
-  height: 39px;
   left: calc(50% - 691px / 2 - 262.5px);
   color: ${({ theme }) => theme.color.black};
+  transition: 0.1s;
+
+  &:hover {
+    color: ${({ theme }) => theme.color.blue};
+  }
 `;
 
 export const Info = styled.text`
@@ -48,4 +51,15 @@ export const Info = styled.text`
   line-height: 140%;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
+`;
+
+export const Logos = styled.div`
+  display: flex;
+  margin-top: 56px;
+  padding-bottom: 20px;
+  grid-gap: 24px;
+  left: 0.18%;
+  right: 0%;
+  top: 0.37%;
+  bottom: 0.61%;
 `;
