@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const SocialContainer = styled.div`
-  margin-left: 352px;
-  margin-top: 120px;
+  margin: auto;
   width: 691px;
   height: 282px;
   left: 352px;
+  top: 2277px;
 `;
 
 export const LetsTalk = styled.text`
