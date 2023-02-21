@@ -131,7 +131,7 @@ function App() {
               <a href="https://github.com/KonradBauer">
                 <GithubBlack />
               </a>
-              <a href="www.linkedin.com/in/konrad-bauer">
+              <a href="https://linkedin.com/in/konrad-bauer">
                 <LinkedInBlack />
               </a>
             </Logos>
