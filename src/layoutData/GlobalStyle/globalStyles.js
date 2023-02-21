@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 export const theme = {
   color: {
@@ -18,4 +19,9 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     background: #FBFBFE;
   }
+`;
+
+export const GlobalContainer = styled.div`
+  width: 1216px;
+  margin: auto;
 `;
