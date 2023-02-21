@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const SocialContainer = styled.div`
-  margin: auto;
-  width: 691px;
-  height: 282px;
-  left: 352px;
-  top: 2277px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 120px;
+  max-width: 670px;
 `;
 
 export const LetsTalk = styled.text`
@@ -44,7 +44,6 @@ export const Info = styled.text`
   height: 75px;
   left: calc(50% - 670px / 2 - 273px);
   top: 2380px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
