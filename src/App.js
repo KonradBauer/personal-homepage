@@ -24,8 +24,15 @@ import {
   PortfolioSubHeader,
 } from "./layoutData/Portfolio/PortfolioHeader/styled";
 import { ReactComponent as GithubLogo } from "./common/svg/github.svg";
+import { ReactComponent as Hand } from "./common/svg/hand.svg";
 import { PortfolioContent } from "./layoutData/Portfolio/PortfolioContent/styled";
 import { Tile } from "./layoutData/Portfolio/Tile/styled";
+import {
+  Email,
+  Info,
+  LetsTalk,
+  SocialContainer,
+} from "./layoutData/Social/styled";
 
 function App() {
   return (
@@ -105,6 +112,16 @@ function App() {
           <Tile />
           <Tile />
         </PortfolioContent>
+        <SocialContainer>
+          <LetsTalk>Let's Talk</LetsTalk>
+          <Email>konradbauer94@gmail.com</Email>
+          <Info>
+            I’m always open to new projects whenever I have the time. If you
+            have a website, dashboard or mobile app in mind and need some help
+            to make your ideas come to life, feel free to conatct me
+            <Hand />
+          </Info>
+        </SocialContainer>
       </ThemeProvider>
     </>
   );
