@@ -2,10 +2,8 @@ import styled from "styled-components";
 
 export const Header = styled.div`
   width: 1216px;
-  height: 384px;
+  height: 150px;
   margin: auto;
-  margin-top: 119px;
-  margin-bottom: 73px;
 `;
 
 export const Photo = styled.img`
