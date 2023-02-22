@@ -9,7 +9,7 @@ export const SocialContainer = styled.div`
 `;
 
 export const LetsTalk = styled.text`
-  height: 16px;
+  height: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -20,7 +20,7 @@ export const LetsTalk = styled.text`
 
 export const Email = styled.text`
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 900;

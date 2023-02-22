@@ -5,6 +5,7 @@ import {
   ThisIs,
   MyName,
   AboutMe,
+  ButtonHireMe,
 } from "./layoutData/Header/styled";
 import {
   List,
@@ -27,6 +28,7 @@ import { ReactComponent as GithubLogo } from "./common/svg/github.svg";
 import { ReactComponent as Hand } from "./common/svg/hand.svg";
 import { ReactComponent as GithubBlack } from "./common/svg/githubBlack.svg";
 import { ReactComponent as LinkedInBlack } from "./common/svg/linkedinBlack.svg";
+import { ReactComponent as ButtonElement } from "./common/svg/buttonElement.svg";
 import { PortfolioContent } from "./layoutData/Portfolio/PortfolioContent/styled";
 import { Tile } from "./layoutData/Portfolio/Tile/styled";
 import {
@@ -50,6 +52,10 @@ function App() {
               👨💻 I’m a passionate Frontend Developer in love with
               React,currently looking for new job opportunities.
             </AboutMe>
+            <ButtonHireMe>
+              <ButtonElement />
+              Hire Me
+            </ButtonHireMe>
           </Header>
           <SkillsContainer>
             <ContainerTitle>My skillset includes 🛠️</ContainerTitle>

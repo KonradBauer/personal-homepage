@@ -60,18 +60,13 @@ export const AboutMe = styled.text`
 `;
 
 export const ButtonHireMe = styled.button`
+  position: absolute;
+  margin-left: 460px;
+  margin-top: 250px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
   padding: 12px 16px;
   gap: 16px;
-  margin: auto;
-  margin-top: 381px;
-  width: 154px;
-  height: 49px;
-  left: 809px;
-  top: 381px;
   border: 1px solid rgba(209, 213, 218, 0.3);
   border-radius: 4px;
   background-color: ${({ theme }) => theme.color.scienceBlue};
