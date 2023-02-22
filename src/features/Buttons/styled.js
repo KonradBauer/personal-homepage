@@ -24,4 +24,11 @@ export const ButtonHireMe = styled.button`
   text-align: center;
   background-color: ${({ theme }) => theme.color.scienceBlue};
   color: ${({ theme }) => theme.color.white};
+  cursor: pointer;
+  transition: 0.1s;
+
+  &:hover {
+    box-shadow: 2px -2px 0px #6d93be, -2px 2px 0px #6d93be, 2px 2px 0px #6d93be,
+      -2px -2px 0px #6d93be;
+  }
 `;
