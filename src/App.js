@@ -5,7 +5,6 @@ import {
   ThisIs,
   MyName,
   AboutMe,
-  ButtonHireMe,
 } from "./layoutData/Header/styled";
 import {
   List,
@@ -38,6 +37,7 @@ import {
   Logos,
   SocialContainer,
 } from "./layoutData/Social/styled";
+import { ButtonHireMe } from "./features/Buttons/styled";
 
 function App() {
   return (
