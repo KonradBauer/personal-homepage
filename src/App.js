@@ -7,7 +7,6 @@ import {
   AboutMe,
 } from "./layoutData/Header/styled";
 import {
-  List,
   ListItem,
   Skills,
   SkillsContainer,
@@ -57,7 +56,7 @@ function App() {
             <ContainerTitle>My skillset includes 🛠️</ContainerTitle>
             <ContainerLine />
             <Skills>
-              <List>
+              <ul>
                 <ListItem>Teamwork</ListItem>
                 <ListItem>Semantic & accessible HTML</ListItem>
                 <ListItem>Responsive Web Design</ListItem>
@@ -66,8 +65,8 @@ function App() {
                 <ListItem>CSS Flexbox</ListItem>
                 <ListItem>JavaScript: ES6+</ListItem>
                 <ListItem>Promises, Async/Await</ListItem>
-              </List>
-              <List>
+              </ul>
+              <ul>
                 <ListItem>Immutability</ListItem>
                 <ListItem>Working with API (fetch, axios)</ListItem>
                 <ListItem>Error handling</ListItem>
@@ -76,33 +75,33 @@ function App() {
                 <ListItem>Redux (Toolkit)</ListItem>
                 <ListItem>Redux-Saga</ListItem>
                 <ListItem>React Router</ListItem>
-              </List>
-              <List>
+              </ul>
+              <ul>
                 <ListItem>GitHub Pull Requests & Review</ListItem>
                 <ListItem>Trello</ListItem>
                 <ListItem>Scrum</ListItem>
                 <ListItem>NPM</ListItem>
                 <ListItem>Markdown</ListItem>
                 <ListItem>Git</ListItem>
-              </List>
+              </ul>
             </Skills>
           </SkillsContainer>
           <NextToLearnContainer>
             <ContainerTitle>What I want to learn next 🚀</ContainerTitle>
             <ContainerLine />
             <Skills>
-              <List>
+              <ul>
                 <ListItem>React Context</ListItem>
                 <ListItem>React Query</ListItem>
-              </List>
-              <List>
+              </ul>
+              <ul>
                 <ListItem>Cypress</ListItem>
                 <ListItem>Unit testing</ListItem>
-              </List>
-              <List>
+              </ul>
+              <ul>
                 <ListItem>TypeScript</ListItem>
                 <ListItem>Node.js</ListItem>
-              </List>
+              </ul>
             </Skills>
           </NextToLearnContainer>
           <PortfolioHeadContainer>

@@ -44,8 +44,6 @@ export const Skills = styled.div`
   letter-spacing: 0.05em;
 `;
 
-export const List = styled.ul``;
-
 export const ListItem = styled.li`
   margin-bottom: 8px;
 
