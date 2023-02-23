@@ -27,7 +27,6 @@ import { ReactComponent as GithubLogo } from "./common/svg/github.svg";
 import { ReactComponent as Hand } from "./common/svg/hand.svg";
 import { ReactComponent as GithubBlack } from "./common/svg/githubBlack.svg";
 import { ReactComponent as LinkedInBlack } from "./common/svg/linkedinBlack.svg";
-import { ReactComponent as ButtonElement } from "./common/svg/buttonElement.svg";
 import { PortfolioContent } from "./layoutData/Portfolio/PortfolioContent/styled";
 import { Tile } from "./layoutData/Portfolio/Tile/styled";
 import {
@@ -37,7 +36,7 @@ import {
   Logos,
   SocialContainer,
 } from "./layoutData/Social/styled";
-import { ButtonHireMe } from "./features/Buttons/styled";
+import { Button } from "./features/Buttons/index";
 
 function App() {
   return (
@@ -52,10 +51,7 @@ function App() {
               👨💻 I’m a passionate Frontend Developer in love with
               React,currently looking for new job opportunities.
             </AboutMe>
-            <ButtonHireMe>
-              <ButtonElement />
-              Hire Me
-            </ButtonHireMe>
+            <Button />
           </Header>
           <SkillsContainer>
             <ContainerTitle>My skillset includes 🛠️</ContainerTitle>
