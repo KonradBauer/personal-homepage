@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ThemeProvider } from "styled-components";
-import { GlobalContainer, theme } from "./layoutData/GlobalStyle/globalStyles";
+import { GlobalContainer, theme } from "./common/GlobalStyle/globalStyles";
 import { HeaderContent } from "./layoutData/Header/index";
 import { SkillsList } from "./layoutData/SkillsContainer/index";
 import { NextToLearn } from "./layoutData/NextToLearnContaier/index";
