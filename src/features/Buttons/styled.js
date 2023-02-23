@@ -19,8 +19,6 @@ export const ButtonHireMe = styled.button`
   font-style: normal;
   font-size: 20.0584px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-align: center;
   background-color: ${({ theme }) => theme.color.scienceBlue};
   color: ${({ theme }) => theme.color.white};
