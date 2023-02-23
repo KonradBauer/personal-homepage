@@ -10,7 +10,7 @@ export const PortfolioHead = () => {
   return (
     <PortfolioHeadContainer>
       <a href="https://github.com/KonradBauer">
-        <GithubLogo />
+        <GithubLogo title="GitHub" />
       </a>
       <PortfolioHeader>Portfolio</PortfolioHeader>
       <PortfolioSubHeader>My recent projects</PortfolioSubHeader>

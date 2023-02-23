@@ -16,10 +16,10 @@ export const Socials = () => {
       </Info>
       <Logos>
         <a href="https://github.com/KonradBauer">
-          <GithubBlack />
+          <GithubBlack title="GitHub" />
         </a>
         <a href="https://linkedin.com/in/konrad-bauer">
-          <LinkedInBlack />
+          <LinkedInBlack title="LinkedIn" />
         </a>
       </Logos>
     </SocialContainer>
