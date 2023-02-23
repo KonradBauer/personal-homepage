@@ -10,12 +10,6 @@ import {
 import image from "./common/images/konrad.png";
 import { ThemeProvider } from "styled-components";
 import { GlobalContainer, theme } from "./layoutData/GlobalStyle/globalStyles";
-import {
-  PortfolioHeadContainer,
-  PortfolioHeader,
-  PortfolioSubHeader,
-} from "./layoutData/Portfolio/PortfolioHeader/styled";
-import { ReactComponent as GithubLogo } from "./common/svg/github.svg";
 import { ReactComponent as Hand } from "./common/svg/hand.svg";
 import { ReactComponent as GithubBlack } from "./common/svg/githubBlack.svg";
 import { ReactComponent as LinkedInBlack } from "./common/svg/linkedinBlack.svg";
@@ -31,6 +25,7 @@ import {
 import { Button } from "./features/Buttons/index";
 import { SkillsList } from "./layoutData/SkillsContainer/index";
 import { NextToLearn } from "./layoutData/NextToLearnContaier/index";
+import { PortfolioHead } from "./layoutData/Portfolio/PortfolioHeader/index";
 
 function App() {
   return (
@@ -49,13 +44,7 @@ function App() {
           </Header>
           <SkillsList />
           <NextToLearn />
-          <PortfolioHeadContainer>
-            <a href="https://github.com/KonradBauer">
-              <GithubLogo />
-            </a>
-            <PortfolioHeader>Portfolio</PortfolioHeader>
-            <PortfolioSubHeader>My recent projects</PortfolioSubHeader>
-          </PortfolioHeadContainer>
+          <PortfolioHead />
           <PortfolioContent>
             <Tile />
             <Tile />
