@@ -13,8 +13,6 @@ import { GlobalContainer, theme } from "./layoutData/GlobalStyle/globalStyles";
 import { ReactComponent as Hand } from "./common/svg/hand.svg";
 import { ReactComponent as GithubBlack } from "./common/svg/githubBlack.svg";
 import { ReactComponent as LinkedInBlack } from "./common/svg/linkedinBlack.svg";
-import { PortfolioContent } from "./layoutData/Portfolio/PortfolioContent/styled";
-import { Tile } from "./layoutData/Portfolio/Tile/styled";
 import {
   Email,
   Info,
@@ -26,6 +24,7 @@ import { Button } from "./features/Buttons/index";
 import { SkillsList } from "./layoutData/SkillsContainer/index";
 import { NextToLearn } from "./layoutData/NextToLearnContaier/index";
 import { PortfolioHead } from "./layoutData/Portfolio/PortfolioHeader/index";
+import { PortfolioMain } from "./layoutData/Portfolio/PortfolioContent/index";
 
 function App() {
   return (
@@ -45,14 +44,7 @@ function App() {
           <SkillsList />
           <NextToLearn />
           <PortfolioHead />
-          <PortfolioContent>
-            <Tile />
-            <Tile />
-            <Tile />
-            <Tile />
-            <Tile />
-            <Tile />
-          </PortfolioContent>
+          <PortfolioMain />
           <SocialContainer>
             <LetsTalk>Let’s talk!</LetsTalk>
             <Email>konradbauer94@gmail.com</Email>
