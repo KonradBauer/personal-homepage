@@ -6,17 +6,10 @@ import {
   MyName,
   AboutMe,
 } from "./layoutData/Header/styled";
-import {
-  ListItem,
-  Skills,
-  ContainerTitle,
-  ContainerLine,
-} from "./layoutData/SkillsContainer/styled";
-import { SkillsList } from "./layoutData/SkillsContainer/index";
+
 import image from "./common/images/konrad.png";
 import { ThemeProvider } from "styled-components";
 import { GlobalContainer, theme } from "./layoutData/GlobalStyle/globalStyles";
-import { NextToLearnContainer } from "./layoutData/NextToLearnContaier/styled";
 import {
   PortfolioHeadContainer,
   PortfolioHeader,
@@ -36,6 +29,8 @@ import {
   SocialContainer,
 } from "./layoutData/Social/styled";
 import { Button } from "./features/Buttons/index";
+import { SkillsList } from "./layoutData/SkillsContainer/index";
+import { NextToLearn } from "./layoutData/NextToLearnContaier/index";
 
 function App() {
   return (
@@ -53,24 +48,7 @@ function App() {
             <Button />
           </Header>
           <SkillsList />
-          <NextToLearnContainer>
-            <ContainerTitle>What I want to learn next 🚀</ContainerTitle>
-            <ContainerLine />
-            <Skills>
-              <ul>
-                <ListItem>React Context</ListItem>
-                <ListItem>React Query</ListItem>
-              </ul>
-              <ul>
-                <ListItem>Cypress</ListItem>
-                <ListItem>Unit testing</ListItem>
-              </ul>
-              <ul>
-                <ListItem>TypeScript</ListItem>
-                <ListItem>Node.js</ListItem>
-              </ul>
-            </Skills>
-          </NextToLearnContainer>
+          <NextToLearn />
           <PortfolioHeadContainer>
             <a href="https://github.com/KonradBauer">
               <GithubLogo />
