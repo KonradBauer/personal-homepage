@@ -20,7 +20,7 @@ function App() {
           <SkillsList />
           <NextToLearn />
           <PortfolioHead />
-          <LoadingStatus />
+          <PortfolioMain />
           <Socials />
         </GlobalContainer>
       </ThemeProvider>
