@@ -3,7 +3,7 @@ import {
   LoadingText,
   Error,
   ErrorText,
-  ButtonGit,
+  AnchorButton,
   SecondaryText,
 } from "./styled";
 import { ReactComponent as Danger } from "../../common/svg/danger.svg";
@@ -29,9 +29,9 @@ export const ErrorStatus = () => {
           Github.
         </SecondaryText>
       </Error>
-      <a href="https://github.com/KonradBauer">
-        <ButtonGit>Go to Github</ButtonGit>
-      </a>
+      <AnchorButton href="https://github.com/KonradBauer" target="_blank">
+        Go to Github
+      </AnchorButton>
     </>
   );
 };

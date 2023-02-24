@@ -57,7 +57,7 @@ export const SecondaryText = styled.text`
   color: ${({ theme }) => theme.color.black};
 `;
 
-export const ButtonGit = styled.button`
+export const AnchorButton = styled.a`
   display: flex;
   margin: auto;
   flex-direction: row;
