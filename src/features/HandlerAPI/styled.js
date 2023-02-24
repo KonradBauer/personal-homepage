@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { ReactComponent as Spinner } from "../../common/svg/spinner.svg";
 
 export const Loading = styled.div`
@@ -86,6 +86,13 @@ export const AnchorButton = styled.a`
   }
 `;
 
-export const StyledSpinner = styled(Spinner)`
+const rotate = keyframes`
+to {
   transform: rotate(360deg);
+}
+`;
+
+export const StyledSpinner = styled(Spinner)`
+  margin-top: 48px;
+  animation: ${rotate} 1s linear infinite;
 `;
