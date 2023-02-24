@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Spinner } from "../../common/svg/spinner.svg";
 
 export const Loading = styled.div`
   margin: auto;
@@ -83,4 +84,8 @@ export const AnchorButton = styled.a`
     box-shadow: 2px -2px 0px #6d93be, -2px 2px 0px #6d93be, 2px 2px 0px #6d93be,
       -2px -2px 0px #6d93be;
   }
+`;
+
+export const StyledSpinner = styled(Spinner)`
+  transform: rotate(360deg);
 `;

@@ -5,6 +5,7 @@ import {
   ErrorText,
   AnchorButton,
   SecondaryText,
+  StyledSpinner,
 } from "./styled";
 import { ReactComponent as Danger } from "../../common/svg/danger.svg";
 
@@ -13,6 +14,7 @@ export const LoadingStatus = () => {
     <>
       <Loading>
         <LoadingText>Please wait, projects are being loaded...</LoadingText>
+        <StyledSpinner />
       </Loading>
     </>
   );
