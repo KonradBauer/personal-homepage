@@ -21,10 +21,10 @@ export const Socials = () => {
         <Hand />
       </Info>
       <Logos>
-        <a href="https://github.com/KonradBauer">
+        <a href="https://github.com/KonradBauer" target={"_blank"}>
           <StyledGithubBlack title="Github" />
         </a>
-        <a href="https://linkedin.com/in/konrad-bauer">
+        <a href="https://linkedin.com/in/konrad-bauer" target={"_blank"}>
           <StyledLinkedinBlack title="LinkedIn" />
         </a>
       </Logos>

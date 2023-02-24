@@ -9,7 +9,7 @@ import { ReactComponent as GithubLogo } from "../../../common/svg/github.svg";
 export const PortfolioHead = () => {
   return (
     <PortfolioHeadContainer>
-      <a href="https://github.com/KonradBauer">
+      <a href="https://github.com/KonradBauer" target={"_blank"}>
         <GithubLogo title="GitHub" />
       </a>
       <PortfolioHeader>Portfolio</PortfolioHeader>
