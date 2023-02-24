@@ -1,7 +1,13 @@
-import { SocialContainer, LetsTalk, Email, Info, Logos } from "./styled";
+import {
+  SocialContainer,
+  LetsTalk,
+  Email,
+  Info,
+  Logos,
+  StyledGithubBlack,
+  StyledLinkedinBlack,
+} from "./styled";
 import { ReactComponent as Hand } from "../../common/svg/hand.svg";
-import { ReactComponent as GithubBlack } from "../../common/svg/githubBlack.svg";
-import { ReactComponent as LinkedInBlack } from "../../common/svg/linkedinBlack.svg";
 
 export const Socials = () => {
   return (
@@ -16,10 +22,10 @@ export const Socials = () => {
       </Info>
       <Logos>
         <a href="https://github.com/KonradBauer">
-          <GithubBlack title="GitHub" />
+          <StyledGithubBlack title="Github" />
         </a>
         <a href="https://linkedin.com/in/konrad-bauer">
-          <LinkedInBlack title="LinkedIn" />
+          <StyledLinkedinBlack title="LinkedIn" />
         </a>
       </Logos>
     </SocialContainer>

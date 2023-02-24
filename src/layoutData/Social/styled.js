@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ReactComponent as GithubBlack } from "../../common/svg/githubBlack.svg";
+import { ReactComponent as LinkedinBlack } from "../../common/svg/linkedinBlack.svg";
 
 export const SocialContainer = styled.div`
   display: flex;
@@ -58,4 +60,20 @@ export const Logos = styled.div`
   right: 0%;
   top: 0.37%;
   bottom: 0.61%;
+`;
+
+export const StyledGithubBlack = styled(GithubBlack)`
+  color: ${({ theme }) => theme.color.black};
+
+  &:hover {
+    color: ${({ theme }) => theme.color.blue};
+  }
+`;
+
+export const StyledLinkedinBlack = styled(LinkedinBlack)`
+  color: ${({ theme }) => theme.color.black};
+
+  &:hover {
+    color: ${({ theme }) => theme.color.blue};
+  }
 `;
