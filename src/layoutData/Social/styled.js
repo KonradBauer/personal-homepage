@@ -64,6 +64,7 @@ export const Logos = styled.div`
 
 export const StyledGithubBlack = styled(GithubBlack)`
   color: ${({ theme }) => theme.color.black};
+  transition: 0.1s;
 
   &:hover {
     color: ${({ theme }) => theme.color.blue};
@@ -72,6 +73,7 @@ export const StyledGithubBlack = styled(GithubBlack)`
 
 export const StyledLinkedinBlack = styled(LinkedinBlack)`
   color: ${({ theme }) => theme.color.black};
+  transition: 0.1s;
 
   &:hover {
     color: ${({ theme }) => theme.color.blue};
