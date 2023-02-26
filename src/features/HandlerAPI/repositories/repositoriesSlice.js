@@ -3,7 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const repositoriesSlice = createSlice({
   name: "repositories",
   initialState: {
-    repositories: [],
+    repositories: null,
+    status: "initial",
   },
   reducers: {
     loadRepositories: ({ repositories }, { payload }) => {
