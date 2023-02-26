@@ -7,6 +7,8 @@ import {
 import { ReactComponent as GithubLogo } from "../../../common/svg/github.svg";
 
 export const PortfolioHead = () => {
+  const title = "Github";
+
   return (
     <PortfolioHeadContainer>
       <a
@@ -14,7 +16,7 @@ export const PortfolioHead = () => {
         target={"_blank"}
         rel="noreferrer"
       >
-        <GithubLogo title="GitHub" />
+        <GithubLogo title={title} />
       </a>
       <PortfolioHeader>Portfolio</PortfolioHeader>
       <PortfolioSubHeader>My recent projects</PortfolioSubHeader>
