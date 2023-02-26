@@ -6,4 +6,3 @@ export const getRepositories = (username) =>
   axios
     .get(`${sourceURL}/users/${username}/repos`)
     .then((response) => response.data);
-console.log(response.data);
