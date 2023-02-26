@@ -11,7 +11,7 @@ const repositoriesSlice = createSlice({
       repositories: null,
       status: "loading",
     }),
-    loadRepositoriesSuccess: (state, { payload: repositories }) => ({
+    loadRepositoriesSuccess: (_, { payload: repositories }) => ({
       repositories,
       status: "success",
     }),
@@ -19,6 +19,15 @@ const repositoriesSlice = createSlice({
   },
 });
 
-export const { loadRepositories } = repositoriesSlice.actions;
-export const selectRepositories = (state) => state.repositories;
+export const {
+  loadRepositories,
+  loadRepositoriesSuccess,
+  loadRepositoriesError,
+} = repositoriesSlice.actions;
+
+const selectRepositories = (state) => state.repositories;
+
+export const selectRepoStatus = selectRepositories(state).status;
+export const selectRepo = selectRepositories(state).repositories;
+
 export default repositoriesSlice.reducer;

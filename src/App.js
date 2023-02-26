@@ -8,8 +8,8 @@ import { NextToLearn } from "./layoutData/NextToLearnContaier/index";
 import { PortfolioHead } from "./layoutData/Portfolio/PortfolioHeader/index";
 import { PortfolioMain } from "./layoutData/Portfolio/PortfolioContent/index";
 import { Socials } from "./layoutData/Social/index";
-import { LoadingStatus } from "./features/HandlerAPI/index";
-import { ErrorStatus } from "./features/HandlerAPI/index";
+import { LoadingStatus } from "./layoutData/HandlerAPI/index";
+import { ErrorStatus } from "./layoutData/HandlerAPI/index";
 
 function App() {
   return (

@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const sourceURL = "https://api.github.com";
+const githubAPIBaseURL = "https://api.github.com/";
 
 export const getRepositories = (username) =>
   axios
-    .get(`${sourceURL}/users/${username}/repos`)
+    .get(`${githubAPIBaseURL}/users/${username}/repos`)
     .then((response) => response.data);
