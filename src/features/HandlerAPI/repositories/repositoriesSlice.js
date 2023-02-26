@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const repositoriesSlice = createSlice({
-  name: "repositories",
+  name: "repositoriesData",
   initialState: {
     repositories: null,
     status: "initial",
