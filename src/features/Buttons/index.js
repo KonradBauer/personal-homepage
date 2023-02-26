@@ -6,8 +6,10 @@ export const Button = () => {
     window.location.href = "mailto:konradbauer94@gmail.com";
   };
 
+  const title = "konradbauer94@gmail.com";
+
   return (
-    <ButtonHireMe onClick={send}>
+    <ButtonHireMe onClick={send} title={title}>
       <ButtonElement />
       Hire Me
     </ButtonHireMe>
