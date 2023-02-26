@@ -11,3 +11,7 @@ const repositoriesSlice = createSlice({
     },
   },
 });
+
+export const { loadRepositories } = repositoriesSlice.actions;
+export const selectRepositories = (state) => state.repositories;
+export default repositoriesSlice.reducer;
