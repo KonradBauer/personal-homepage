@@ -21,6 +21,8 @@ export const LoadingStatus = () => {
 };
 
 export const ErrorStatus = () => {
+  const title = "Open Github";
+
   return (
     <>
       <Error>
@@ -31,7 +33,11 @@ export const ErrorStatus = () => {
           Github.
         </SecondaryText>
       </Error>
-      <AnchorButton href="https://github.com/KonradBauer" target="_blank">
+      <AnchorButton
+        href="https://github.com/KonradBauer"
+        target="_blank"
+        title={title}
+      >
         Go to Github
       </AnchorButton>
     </>
