@@ -7,9 +7,15 @@ const repositoriesSlice = createSlice({
     status: "initial",
   },
   reducers: {
-    loadRepositories: ({ repositories }, { payload }) => {
-      repositories.push(payload);
-    },
+    loadRepositories: () => ({
+      repositories: null,
+      status: "loading",
+    }),
+    loadRepositoriesSuccess: (state, { payload: repositories }) => ({
+      repositories,
+      status: "success",
+    }),
+    loadRepositoriesError: () => ({ repositories: null, status: "error" }),
   },
 });
 
