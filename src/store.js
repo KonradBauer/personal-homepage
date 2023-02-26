@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import repositoriesReducer from "./features/HandlerAPI/repositories/repositoriesSlice";
+import projectsReducer from "./features/Projects/projectsSlice";
 
 export default configureStore({
   reducer: {
-    repositories: repositoriesReducer,
+    projects: projectsReducer,
   },
 });
