@@ -4,5 +4,5 @@ const githubAPIBaseURL = "https://api.github.com/";
 
 export const getProjects = (username) =>
   axios
-    .get(`${githubAPIBaseURL}/users/${username}/repos`)
-    .then((response) => response.data);
+    .get(`${githubAPIBaseURL}users/${username}/repos`)
+    .then((response) => console.log(response.data));
