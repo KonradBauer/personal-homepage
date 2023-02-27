@@ -31,17 +31,14 @@ export const PortfolioMain = () => {
     <PortfolioContent status={getProjectsStatus} projects={projects}>
       <Tile>
         <ContentContainer>
-          <Title>Movies Browser</Title>
-          <Description>
-            Project description, e.g. website where you can search for favourite
-            movies and people. Project description, e.g. website where you can
-            search.
-          </Description>
+          <Title></Title>
+          <Description></Description>
+          <Section></Section>
           <Demo>
-            Demo: <Links>https://link.demo.com</Links>
+            <Links></Links>
           </Demo>
           <Code>
-            Code: <Links>https://link.code.com</Links>
+            <Links></Links>
           </Code>
         </ContentContainer>
       </Tile>
