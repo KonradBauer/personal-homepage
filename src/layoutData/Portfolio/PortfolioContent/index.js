@@ -1,14 +1,20 @@
-import { PortfolioContent, Tile } from "./styled";
+import {
+  Code,
+  ContentContainer,
+  Demo,
+  Description,
+  Links,
+  PortfolioContent,
+  Tile,
+  Title,
+} from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import {
   loadProjects,
-  loadProjectsError,
-  loadProjectsSuccess,
   selectProjects,
   selectProjectsStatus,
 } from "../../../features/Projects/projectsSlice";
 import { useEffect } from "react";
-import { getProjects } from "../../../features/Projects/getRepositories";
 
 export const PortfolioMain = () => {
   const dispatch = useDispatch();
@@ -21,5 +27,24 @@ export const PortfolioMain = () => {
     dispatch(loadProjects(userName));
   }, []);
 
-  return <PortfolioContent status={getProjectsStatus} projects={projects} />;
+  return (
+    <PortfolioContent status={getProjectsStatus} projects={projects}>
+      <Tile>
+        <ContentContainer>
+          <Title>Movies Browser</Title>
+          <Description>
+            Project description, e.g. website where you can search for favourite
+            movies and people. Project description, e.g. website where you can
+            search.
+          </Description>
+          <Demo>
+            Demo: <Links>https://link.demo.com</Links>
+          </Demo>
+          <Code>
+            Code: <Links>https://link.code.com</Links>
+          </Code>
+        </ContentContainer>
+      </Tile>
+    </PortfolioContent>
+  );
 };

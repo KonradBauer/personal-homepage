@@ -27,3 +27,74 @@ export const Tile = styled.div`
     border-color: ${({ theme }) => theme.color.silver};
   }
 `;
+
+export const ContentContainer = styled.div`
+  word-break: break;
+  padding: 56px;
+  height: 322px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+`;
+
+export const Title = styled.text`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: ${({ theme }) => theme.color.scienceBlue};
+`;
+
+export const Description = styled.text`
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: ${({ theme }) => theme.color.slateGray};
+`;
+
+export const Demo = styled.text`
+  grid-gap: 8px;
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: ${({ theme }) => theme.color.slateGray};
+`;
+
+export const Code = styled.text`
+  grid-gap: 8px;
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: ${({ theme }) => theme.color.slateGray};
+`;
+
+export const Links = styled.a`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: ${({ theme }) => theme.color.scienceBlue};
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
