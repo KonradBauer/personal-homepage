@@ -21,14 +21,5 @@ export const PortfolioMain = () => {
     dispatch(loadProjects(userName));
   }, []);
 
-  return (
-    <PortfolioContent>
-      <Tile />
-      <Tile />
-      <Tile />
-      <Tile />
-      <Tile />
-      <Tile />
-    </PortfolioContent>
-  );
+  return <PortfolioContent status={getProjectsStatus} projects={projects} />;
 };
