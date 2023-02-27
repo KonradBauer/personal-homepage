@@ -1,13 +1,4 @@
-import {
-  Code,
-  ContentContainer,
-  Demo,
-  Description,
-  Links,
-  PortfolioContent,
-  Tile,
-  Title,
-} from "./styled";
+import { PortfolioContent } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import {
   loadProjects,
@@ -15,6 +6,7 @@ import {
   selectProjectsStatus,
 } from "../../../features/Projects/projectsSlice";
 import { useEffect } from "react";
+import { PortfolioLoader } from "../portfolioLoader";
 
 export const PortfolioMain = () => {
   const dispatch = useDispatch();
@@ -29,19 +21,7 @@ export const PortfolioMain = () => {
 
   return (
     <PortfolioContent status={getProjectsStatus} projects={projects}>
-      <Tile>
-        <ContentContainer>
-          <Title></Title>
-          <Description></Description>
-          <Section></Section>
-          <Demo>
-            <Links></Links>
-          </Demo>
-          <Code>
-            <Links></Links>
-          </Code>
-        </ContentContainer>
-      </Tile>
+      {PortfolioLoader}
     </PortfolioContent>
   );
 };

@@ -6,6 +6,7 @@ import {
   Demo,
   Code,
   Links,
+  Section,
 } from "../Portfolio/PortfolioContent/styled";
 
 export const Projects = ({ repositories }) => {

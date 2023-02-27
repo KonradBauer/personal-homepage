@@ -58,6 +58,8 @@ export const Description = styled.text`
   color: ${({ theme }) => theme.color.slateGray};
 `;
 
+export const Section = styled.div``;
+
 export const Demo = styled.text`
   grid-gap: 8px;
   margin-top: 24px;

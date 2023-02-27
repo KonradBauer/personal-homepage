@@ -1,7 +1,8 @@
-import { TileContent } from "./PortfolioContent/styled";
 import { LoadingStatus, ErrorStatus } from "../FetchStatus";
+import { Projects } from "../Projects";
+import { PortfolioContent } from "./PortfolioContent/styled";
 
-export const PortfolioContent = ({ status, projects }) => {
+export const PortfolioLoader = ({ status, Projects }) => {
   switch (status) {
     case "initial":
       return null;
@@ -13,7 +14,7 @@ export const PortfolioContent = ({ status, projects }) => {
       return <ErrorStatus />;
 
     case "success":
-      return <TileContent projects={projects} />;
+      return <PortfolioContent projects={Projects} />;
 
     default:
       throw new Error(`incorrect status: ${status}`);
