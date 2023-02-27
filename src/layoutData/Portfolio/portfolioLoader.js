@@ -13,7 +13,7 @@ export const PortfolioContent = ({ status, projects }) => {
       return <ErrorStatus />;
 
     case "success":
-      return <TileContent />;
+      return <TileContent projects={projects} />;
 
     default:
       throw new Error(`incorrect status: ${status}`);
