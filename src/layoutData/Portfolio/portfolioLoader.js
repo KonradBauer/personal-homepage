@@ -1,8 +1,7 @@
 import { LoadingStatus, ErrorStatus } from "../FetchStatus";
-import { Projects } from "../Projects";
 import { PortfolioContent } from "./PortfolioContent/styled";
 
-export const PortfolioLoader = ({ status, Projects }) => {
+export const PortfolioLoader = ({ status, projects }) => {
   switch (status) {
     case "initial":
       return null;
@@ -14,7 +13,7 @@ export const PortfolioLoader = ({ status, Projects }) => {
       return <ErrorStatus />;
 
     case "success":
-      return <PortfolioContent projects={Projects} />;
+      return <PortfolioContent projects={projects} />;
 
     default:
       throw new Error(`incorrect status: ${status}`);
