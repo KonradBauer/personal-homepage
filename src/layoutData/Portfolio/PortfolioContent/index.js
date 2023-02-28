@@ -6,7 +6,6 @@ import {
 } from "../../../features/Projects/projectsSlice";
 import { useEffect } from "react";
 import { PortfolioLoader } from "../../../features/Projects/portfolioLoader";
-import { PortfolioContent } from "./styled";
 
 export const PortfolioMain = () => {
   const dispatch = useDispatch();
