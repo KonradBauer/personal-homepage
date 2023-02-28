@@ -1,4 +1,3 @@
-import { PortfolioContent } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import {
   loadProjects,
@@ -6,7 +5,8 @@ import {
   selectProjectsStatus,
 } from "../../../features/Projects/projectsSlice";
 import { useEffect } from "react";
-import { PortfolioLoader } from "../portfolioLoader";
+import { PortfolioLoader } from "../../../features/Projects/portfolioLoader";
+import { PortfolioContent } from "./styled";
 
 export const PortfolioMain = () => {
   const dispatch = useDispatch();
@@ -17,11 +17,12 @@ export const PortfolioMain = () => {
 
   useEffect(() => {
     dispatch(loadProjects(userName));
-  }, []);
+  }, [dispatch]);
 
   return (
-    <PortfolioContent status={getProjectsStatus} projects={projects}>
-      {PortfolioLoader}
-    </PortfolioContent>
+    <PortfolioLoader
+      status={getProjectsStatus}
+      projects={projects}
+    ></PortfolioLoader>
   );
 };
