@@ -4,6 +4,12 @@ export const PortfolioHeadContainer = styled.div`
   text-align: center;
   margin-top: 72px;
   height: auto;
+
+  @media (max-width: 376px) {
+    width: 375px;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
 `;
 
 export const PortfolioHeader = styled.section`

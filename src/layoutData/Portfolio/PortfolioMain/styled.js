@@ -10,6 +10,11 @@ export const PortfolioMain = styled.div`
   width: 1216px;
   left: 352px;
   top: 1333px;
+
+  @media (max-width: 376px) {
+    width: 375px;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Tile = styled.div`
