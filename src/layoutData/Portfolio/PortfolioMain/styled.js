@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PortfolioContent = styled.div`
+export const PortfolioMain = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: center;
