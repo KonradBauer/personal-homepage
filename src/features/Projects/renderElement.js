@@ -9,9 +9,9 @@ import {
   Section,
 } from "../../layoutData/Portfolio/PortfolioContent/styled";
 
-export const Projects = ({ repositories }) => (
+export const Projects = ({ projects }) => (
   <Tile>
-    {repositories.map(({ id, name, description, homepage, html_url }) => (
+    {projects.map(({ id, name, description, homepage, html_url }) => (
       <ContentContainer key={id}>
         <Title>{name}</Title>
         <Description>{description}</Description>
