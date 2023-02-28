@@ -6,7 +6,7 @@ import { HeaderContent } from "./layoutData/Header/index";
 import { SkillsList } from "./layoutData/SkillsContainer/index";
 import { NextToLearn } from "./layoutData/NextToLearnContaier/index";
 import { PortfolioHead } from "./layoutData/Portfolio/PortfolioHeader/index";
-import { PortfolioMain } from "./layoutData/Portfolio/PortfolioContent/index";
+import { PortfolioMain } from "./layoutData/Portfolio/PortfolioMain/index";
 import { Socials } from "./layoutData/Social/index";
 
 function App() {
