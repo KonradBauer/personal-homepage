@@ -1,5 +1,5 @@
 import { call, put, takeLatest, delay } from "redux-saga/effects";
-import { getProjects } from "./getRepositories";
+import { getProjects } from "./getProjects";
 import {
   loadProjects,
   loadProjectsSuccess,
@@ -11,7 +11,6 @@ const loadingDelay = 2000;
 function* loadProjectsHandler({ payload: username }) {
   try {
     yield delay(loadingDelay); //demo loading;
-    yield delay(2000);
     const projects = yield call(getProjects, username);
     yield put(loadProjectsSuccess(projects));
   } catch (error) {
