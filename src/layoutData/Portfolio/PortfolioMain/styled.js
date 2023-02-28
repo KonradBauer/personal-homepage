@@ -30,7 +30,7 @@ export const Tile = styled.div`
 
 export const ContentContainer = styled.div`
   word-break: break;
-  padding: 56px;
+  padding: 40px;
   height: 322px;
   left: 0px;
   top: 0px;
@@ -95,6 +95,7 @@ export const Links = styled.a`
   align-items: center;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.scienceBlue};
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
