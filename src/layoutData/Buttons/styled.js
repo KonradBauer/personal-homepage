@@ -6,8 +6,8 @@ export const ButtonHireMe = styled.button`
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-left: 458px;
-  margin-top: 381px;
+  margin-left: 10px;
+  margin-top: 405px;
   margin-right: 967px;
   border: 1px solid rgba(209, 213, 218, 0.3);
   height: 49px;
