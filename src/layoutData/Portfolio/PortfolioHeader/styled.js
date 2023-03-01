@@ -5,10 +5,12 @@ export const PortfolioHeadContainer = styled.div`
   margin-top: 72px;
   height: auto;
 
-  @media (max-width: 376px) {
-    width: 375px;
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    margin: auto;
+  }
+
+  @media (max-width: 376px) {
+    grid-template-columns: 1fr;
   }
 `;
 
