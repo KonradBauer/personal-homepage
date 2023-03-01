@@ -8,9 +8,9 @@ export const Header = styled.div`
 
 export const Photo = styled.img`
   position: absolute;
-  width: 398px;
-  height: 398px;
-  left: calc(50% - 398px / 2 - 416px);
+  width: 38vw;
+  max-width: 398px;
+  max-height: 398px;
   top: 115px;
   border-radius: 50%;
 `;
