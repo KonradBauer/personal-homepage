@@ -1,18 +1,33 @@
 import styled from "styled-components";
 
 export const Header = styled.div`
-  width: 1216px;
-  height: 150px;
-  margin: auto;
+  margin-top: -38px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 64px;
+  align-items: center;
+  margin-bottom: 63px;
+
+  @media (width: 375px) {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
 `;
 
 export const Photo = styled.img`
-  position: absolute;
-  width: 38vw;
-  max-width: 398px;
-  max-height: 398px;
-  top: 115px;
+  margin-top: 100px;
+  height: 384px;
+  width: 30vw;
+  max-width: 384px;
   border-radius: 50%;
+
+  @media (max-width: 376px) {
+    width: 132px;
+    max-height: 398px;
+    top: 115px;
+    border-radius: 50%;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ThisIs = styled.text`
