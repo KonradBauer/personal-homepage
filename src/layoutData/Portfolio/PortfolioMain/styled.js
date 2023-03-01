@@ -15,6 +15,17 @@ export const PortfolioMain = styled.div`
     width: 375px;
     grid-template-columns: 1fr;
   }
+
+  @media (width: 375px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
 `;
 
 export const Tile = styled.div`
