@@ -8,6 +8,10 @@ export const SocialContainer = styled.div`
   gap: 24px;
   margin-top: 120px;
   max-width: 670px;
+
+  @media (width: 375px) {
+    margin: auto;
+  }
 `;
 
 export const LetsTalk = styled.text`
