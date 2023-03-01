@@ -9,10 +9,20 @@ export const SkillsContainer = styled.div`
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
+
+  @media (width: 375px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+    width: 292px;
+    height: 1000px;
+  }
 `;
 
 export const ContainerTitle = styled.text`
-  width: 328px;
   height: 36px;
   font-style: normal;
   font-weight: 900;
@@ -21,6 +31,21 @@ export const ContainerTitle = styled.text`
   text-align: center;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
+
+  @media (width: 375px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 292px;
+    margin: auto;
+    margin-bottom: -50px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const ContainerLine = styled.div`
@@ -33,15 +58,27 @@ export const ContainerLine = styled.div`
 `;
 
 export const Skills = styled.div`
-  display: grid;
   margin-top: 48px;
-  grid-template-columns: 1fr 1fr 1fr;
   color: ${({ theme }) => theme.color.slateGray};
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
+`;
+
+export const List = styled.ul`
+  display: grid;
+  grid-column-gap: 100px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 376px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ListItem = styled.li`
