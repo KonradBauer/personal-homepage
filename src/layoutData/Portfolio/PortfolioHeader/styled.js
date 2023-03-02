@@ -28,6 +28,15 @@ export const PortfolioHeader = styled.section`
   text-align: center;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
+
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const PortfolioSubHeader = styled.section`
@@ -38,6 +47,14 @@ export const PortfolioSubHeader = styled.section`
   line-height: 140%;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
+
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const ProjectTile = styled.div`
