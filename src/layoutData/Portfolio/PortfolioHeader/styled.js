@@ -9,8 +9,9 @@ export const PortfolioHeadContainer = styled.div`
     grid-template-columns: 1fr;
   }
 
-  @media (max-width: 376px) {
+  @media (max-width: 375px) {
     grid-template-columns: 1fr;
+    margin-top: 40px;
   }
 `;
 
