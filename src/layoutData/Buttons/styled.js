@@ -30,6 +30,6 @@ export const ButtonHireMe = styled.button`
   }
 
   @media (max-width: 375px) {
-    margin-top: 0px;
+    margin-top: 100px;
   }
 `;

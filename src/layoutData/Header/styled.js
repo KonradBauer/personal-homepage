@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Header = styled.div`
   display: flex;
+  flex-wrap: wrap;
   grid-template-columns: auto 1fr;
   grid-gap: 64px;
   margin-bottom: 63px;
@@ -15,6 +16,13 @@ export const Header = styled.div`
 export const InfoContent = styled.div`
   margin-top: 155px;
   width: 60%;
+
+  @media (width: 375px) {
+    margin-left: 16px;
+    margin-top: -28px;
+    width: 275px;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Photo = styled.img`
@@ -27,10 +35,10 @@ export const Photo = styled.img`
 
   @media (max-width: 375px) {
     border-radius: 50%;
-    grid-template-columns: 1fr;
     width: 132px;
     height: 132px;
     margin-left: 13px;
+    margin-top: 32px;
   }
 `;
 
@@ -48,17 +56,23 @@ export const ThisIs = styled.h2`
 
 export const MyName = styled.h1`
   display: flex;
-
   color: ${({ theme }) => theme.color.black};
   font-style: normal;
   font-weight: 900;
   font-size: 38px;
   line-height: 46px;
   letter-spacing: 0.05em;
+
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const AboutMe = styled.section`
-  width: 633px;
   height: 57px;
   top: 292px;
   color: ${({ theme }) => theme.color.slateGray};

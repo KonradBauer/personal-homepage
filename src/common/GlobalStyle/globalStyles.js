@@ -25,4 +25,9 @@ export const GlobalStyle = createGlobalStyle`
 export const GlobalContainer = styled.div`
   width: 1216px;
   margin: auto;
+
+  @media (max-width: 375px) {
+    max-width: 375px;
+    margin: auto;
+  }
 `;
