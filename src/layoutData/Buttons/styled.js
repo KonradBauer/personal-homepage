@@ -6,8 +6,7 @@ export const ButtonHireMe = styled.button`
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-left: 10px;
-  margin-top: 405px;
+  margin-top: 32px;
   margin-right: 967px;
   border: 1px solid rgba(209, 213, 218, 0.3);
   height: 49px;
@@ -28,5 +27,9 @@ export const ButtonHireMe = styled.button`
   &:hover {
     box-shadow: 2px -2px 0px #6d93be, -2px 2px 0px #6d93be, 2px 2px 0px #6d93be,
       -2px -2px 0px #6d93be;
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 0px;
   }
 `;

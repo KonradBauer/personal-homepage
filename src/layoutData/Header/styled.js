@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const Header = styled.div`
-  margin-top: -38px;
-  display: grid;
+  display: flex;
   grid-template-columns: auto 1fr;
   grid-gap: 64px;
-  align-items: center;
   margin-bottom: 63px;
 
   @media (width: 375px) {
@@ -14,27 +12,30 @@ export const Header = styled.div`
   }
 `;
 
+export const InfoContent = styled.div`
+  margin-top: 155px;
+`;
+
 export const Photo = styled.img`
+  display: flex;
+  flex-shrink: 0;
   margin-top: 100px;
   height: 384px;
-  width: 30vw;
-  max-width: 384px;
+  width: 384px;
   border-radius: 50%;
 
-  @media (max-width: 376px) {
-    width: 132px;
-    max-height: 398px;
-    top: 115px;
+  @media (max-width: 375px) {
     border-radius: 50%;
     grid-template-columns: 1fr;
+    width: 132px;
+    height: 132px;
+    margin-left: 13px;
   }
 `;
 
-export const ThisIs = styled.text`
-  position: absolute;
+export const ThisIs = styled.h2`
   width: 43px;
   height: 16px;
-  left: calc(50% - 43px / 2 - 129.5px);
   top: 183px;
   font-style: normal;
   font-weight: 700;
@@ -44,12 +45,9 @@ export const ThisIs = styled.text`
   color: ${({ theme }) => theme.color.slateGray};
 `;
 
-export const MyName = styled.text`
-  position: absolute;
-  width: 415px;
-  height: 46px;
-  left: calc(50% - 415px / 2 + 56.5px);
-  top: 211px;
+export const MyName = styled.h1`
+  display: flex;
+
   color: ${({ theme }) => theme.color.black};
   font-style: normal;
   font-weight: 900;
@@ -58,11 +56,9 @@ export const MyName = styled.text`
   letter-spacing: 0.05em;
 `;
 
-export const AboutMe = styled.text`
-  position: absolute;
+export const AboutMe = styled.section`
   width: 633px;
   height: 57px;
-  left: calc(50% - 633px / 2 + 165.5px);
   top: 292px;
   color: ${({ theme }) => theme.color.slateGray};
   font-style: normal;
@@ -70,4 +66,14 @@ export const AboutMe = styled.text`
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.05em;
+
+  @media (max-with: 375px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    width: 275px;
+    height: 96px;
+  }
 `;
