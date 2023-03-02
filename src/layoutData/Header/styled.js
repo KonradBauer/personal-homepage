@@ -14,6 +14,7 @@ export const Header = styled.div`
 
 export const InfoContent = styled.div`
   margin-top: 155px;
+  width: 60%;
 `;
 
 export const Photo = styled.img`
