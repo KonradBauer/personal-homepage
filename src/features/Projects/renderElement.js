@@ -6,7 +6,6 @@ import {
   Demo,
   Code,
   Links,
-  Section,
   PortfolioMain,
 } from "../../layoutData/Portfolio/PortfolioMain/styled";
 
@@ -17,7 +16,7 @@ export const Projects = ({ projects }) => (
         <ContentContainer>
           <Title>{name}</Title>
           <Description>{description}</Description>
-          <Section>
+          <section>
             {!!homepage && (
               <Demo>
                 Demo:{" "}
@@ -32,7 +31,7 @@ export const Projects = ({ projects }) => (
                 {html_url}
               </Links>
             </Code>
-          </Section>
+          </section>
         </ContentContainer>
       </Tile>
     ))}
