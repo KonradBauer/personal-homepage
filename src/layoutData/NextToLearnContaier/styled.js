@@ -18,7 +18,7 @@ export const NextToLearnContainer = styled.div`
     align-items: flex-start;
     margin: auto;
 
-    width: 290px;
+    width: 260px;
     height: 243px;
     left: 14px;
   }
