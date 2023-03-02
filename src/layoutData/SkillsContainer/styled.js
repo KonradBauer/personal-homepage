@@ -18,7 +18,8 @@ export const SkillsContainer = styled.div`
     padding: 16px;
     gap: 12px;
     width: 292px;
-    height: 1000px;
+    height: 720px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -35,10 +36,7 @@ export const ContainerTitle = styled.text`
   @media (width: 375px) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     max-width: 292px;
-    margin: auto;
-    margin-bottom: -50px;
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
@@ -48,23 +46,37 @@ export const ContainerTitle = styled.text`
   }
 `;
 
-export const ContainerLine = styled.div`
-  margin: auto;
+export const ContainerLine = styled.span`
+  margin: 0;
   margin-top: 15px;
   width: 1151px;
   height: 1px;
   top: 659px;
   background: rgba(209, 213, 218, 0.3);
+
+  @media (max-width: 375px) {
+    margin-top: 0;
+    width: 260px;
+    height: 1px;
+  }
 `;
 
 export const Skills = styled.div`
-  margin-top: 48px;
+  margin-top: 0;
   color: ${({ theme }) => theme.color.slateGray};
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
+
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const List = styled.ul`
