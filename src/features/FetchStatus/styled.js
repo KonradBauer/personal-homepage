@@ -82,6 +82,7 @@ export const SecondaryText = styled.text`
 export const AnchorButton = styled.a`
   display: flex;
   margin: auto;
+  margin-top: 32px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
