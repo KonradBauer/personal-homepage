@@ -9,8 +9,12 @@ export const SocialContainer = styled.div`
   margin-top: 120px;
   max-width: 670px;
 
-  @media (width: 375px) {
+  @media (max-width: 375px) {
     margin: auto;
+    width: 288px;
+    height: 236px;
+    left: 16px;
+    top: 2567px;
   }
 `;
 
@@ -27,7 +31,6 @@ export const LetsTalk = styled.text`
 export const Email = styled.text`
   display: flex;
   margin-top: 20px;
-  margin-bottom: 24px;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -39,6 +42,16 @@ export const Email = styled.text`
 
   &:hover {
     color: ${({ theme }) => theme.color.blue};
+  }
+
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    margin-top: 12px;
+    margin-bottom: -12px;
   }
 `;
 
@@ -53,6 +66,18 @@ export const Info = styled.text`
   line-height: 140%;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
+
+  @media (max-width: 375px) {
+    width: 288px;
+    display: flex;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    word-break: break-word;
+  }
 `;
 
 export const Logos = styled.div`
