@@ -8,7 +8,6 @@ import {
   StyledSpinner,
   StyledDanger,
 } from "./styled";
-import { ReactComponent as Danger } from "../../common/svg/danger.svg";
 
 export const LoadingStatus = () => {
   return (
