@@ -11,7 +11,7 @@ export const NextToLearnContainer = styled.div`
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
 
-  @media (width: 375px) {
+  @media (max-width: 375px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
