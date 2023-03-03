@@ -57,6 +57,18 @@ export const Tile = styled.div`
     word-break: break;
     flex-wrap: wrap;
   }
+
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 250px;
+    height: 220x;
+    word-break: break;
+    flex-wrap: wrap;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -78,6 +90,17 @@ export const ContentContainer = styled.div`
     word-break: break;
     flex-wrap: wrap;
   }
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2px;
+    width: 248px;
+    height: 230px;
+    word-break: break;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Title = styled.text`
@@ -92,6 +115,13 @@ export const Title = styled.text`
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+  }
+  @media (max-width: 320px) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.05em;
   }
@@ -112,6 +142,15 @@ export const Description = styled.text`
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+  }
+  @media (max-width: 320px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
     line-height: 17px;
     display: flex;
     align-items: center;
@@ -140,6 +179,15 @@ export const Demo = styled.text`
     align-items: center;
     letter-spacing: 0.05em;
   }
+  @media (max-width: 320px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const Code = styled.text`
@@ -158,6 +206,15 @@ export const Code = styled.text`
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+  }
+  @media (max-width: 320px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
     line-height: 17px;
     display: flex;
     align-items: center;
@@ -189,5 +246,17 @@ export const Links = styled.a`
     align-items: center;
     letter-spacing: 0.05em;
     word-break: break-word;
+  }
+
+  @media (max-width: 320px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    word-break: break-word;
+    flex-wrap: wrap;
   }
 `;

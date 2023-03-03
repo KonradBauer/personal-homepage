@@ -30,4 +30,9 @@ export const GlobalContainer = styled.div`
     max-width: 375px;
     margin: auto;
   }
+
+  @media (max-width: 320px) {
+    max-width: 320px;
+    margin: auto;
+  }
 `;

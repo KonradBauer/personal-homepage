@@ -17,9 +17,20 @@ export const NextToLearnContainer = styled.div`
     justify-content: center;
     align-items: flex-start;
     margin: auto;
-
     width: 260px;
     height: 243px;
     left: 14px;
+  }
+
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    width: 260px;
+    height: 243px;
+    left: 14px;
+    margin-top: 300px;
   }
 `;
