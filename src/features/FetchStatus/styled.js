@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { ReactComponent as Spinner } from "../../common/svg/spinner.svg";
+import { ReactComponent as Danger } from "../../common/svg/danger.svg";
 
 export const Loading = styled.div`
   margin: auto;
@@ -36,32 +37,43 @@ export const LoadingText = styled.text`
 
 export const Error = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 88px;
-  height: 200px;
-  left: 753px;
-  top: 1333px;
+  align-items: center;
+  margin-top: 95px;
+  height: 224px;
+  border-radius: 0px;
+
+  @media (max-width: 375px) {
+    margin-top: 10px;
+    width: 288px;
+    height: 200px;
+  }
+`;
+
+export const StyledDanger = styled(Danger)`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 23px;
 `;
 
 export const ErrorText = styled.text`
-  margin-top: 80px;
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
   letter-spacing: 0.05em;
-  position: absolute;
   width: 420px;
   height: 30px;
-  left: calc(50% - 420px / 2 + 6px);
-  top: 1609px;
   color: ${({ theme }) => theme.color.black};
+
+  @media (min-width: 320px) and (max-width: 374px) {
+  }
 `;
 
 export const SecondaryText = styled.text`
-  margin-top: 60px;
-  position: absolute;
-  width: 400px;
-  top: 1671px;
+  margin-top: 32px;
+  width: 426px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
