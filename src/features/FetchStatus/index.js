@@ -6,6 +6,7 @@ import {
   AnchorButton,
   SecondaryText,
   StyledSpinner,
+  StyledDanger,
 } from "./styled";
 import { ReactComponent as Danger } from "../../common/svg/danger.svg";
 
@@ -26,7 +27,7 @@ export const ErrorStatus = () => {
   return (
     <>
       <Error>
-        <Danger />
+        <StyledDanger />
         <ErrorText>Ooops! Something went wrong... </ErrorText>
         <SecondaryText>
           Sorry, failed to load Github projects. You can check them directly on
