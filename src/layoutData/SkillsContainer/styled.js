@@ -126,6 +126,13 @@ export const Skills = styled.div`
     line-height: 17px;
     letter-spacing: 0.05em;
   }
+  @media (min-width: 376px) and (max-width: 420px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const List = styled.ul`
