@@ -14,7 +14,7 @@ function* loadProjectsHandler({ payload: username }) {
     const projects = yield call(getProjects, username);
     yield put(loadProjectsSuccess(projects));
   } catch (error) {
-    yield call(loadProjectsError());
+    yield put(loadProjectsError());
   }
 }
 
