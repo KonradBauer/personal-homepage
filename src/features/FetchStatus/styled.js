@@ -46,7 +46,7 @@ export const Error = styled.div`
 
   @media (max-width: 375px) {
     margin-top: 10px;
-    width: 288px;
+    max-width: 288px;
     height: 200px;
     margin: auto;
   }
@@ -76,6 +76,7 @@ export const ErrorText = styled.text`
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.05em;
+    max-width: 300px;
   }
 `;
 
