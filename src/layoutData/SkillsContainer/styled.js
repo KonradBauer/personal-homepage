@@ -67,6 +67,17 @@ export const ContainerTitle = styled.text`
     text-align: center;
     letter-spacing: 0.05em;
   }
+  @media (min-width: 376px) and (max-width: 390px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 292px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const ContainerLine = styled.span`
@@ -105,6 +116,13 @@ export const Skills = styled.div`
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+  }
+  @media (min-width: 376px) and (max-width: 390px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
     line-height: 17px;
     letter-spacing: 0.05em;
   }
