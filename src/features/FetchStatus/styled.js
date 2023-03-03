@@ -8,6 +8,12 @@ export const Loading = styled.div`
   height: 224px;
   width: 475px;
   border-radius: 0px;
+
+  @media (max-width: 375px) {
+    margin-top: 10px;
+    width: 288px;
+    height: 200px;
+  }
 `;
 
 export const LoadingText = styled.text`
@@ -17,6 +23,15 @@ export const LoadingText = styled.text`
   line-height: 140%;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
+
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const Error = styled.div`
@@ -54,6 +69,14 @@ export const SecondaryText = styled.text`
   text-align: center;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
+
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const AnchorButton = styled.a`
@@ -93,4 +116,9 @@ to {
 export const StyledSpinner = styled(Spinner)`
   margin-top: 48px;
   animation: ${rotate} 1s linear infinite;
+
+  @media (max-width: 375px) {
+    width: 110px;
+    height: 110px;
+  }
 `;
