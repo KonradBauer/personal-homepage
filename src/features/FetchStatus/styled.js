@@ -48,6 +48,7 @@ export const Error = styled.div`
     margin-top: 10px;
     width: 288px;
     height: 200px;
+    margin: auto;
   }
 `;
 
@@ -67,7 +68,14 @@ export const ErrorText = styled.text`
   height: 30px;
   color: ${({ theme }) => theme.color.black};
 
-  @media (min-width: 320px) and (max-width: 374px) {
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.05em;
   }
 `;
 
@@ -83,11 +91,17 @@ export const SecondaryText = styled.text`
   color: ${({ theme }) => theme.color.black};
 
   @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    word-break: break-word;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 11px;
     line-height: 140%;
     letter-spacing: 0.05em;
+    max-width: 200px;
   }
 `;
 
@@ -117,6 +131,10 @@ export const AnchorButton = styled.a`
   &:hover {
     box-shadow: 2px -2px 0px #6d93be, -2px 2px 0px #6d93be, 2px 2px 0px #6d93be,
       -2px -2px 0px #6d93be;
+  }
+
+  @media (max-width: 375px) {
+    margin-bottom: 40px;
   }
 `;
 
