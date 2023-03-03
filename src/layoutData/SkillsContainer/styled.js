@@ -10,7 +10,18 @@ export const SkillsContainer = styled.div`
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
 
-  @media (width: 375px) {
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+    width: 292px;
+    height: 720px;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 320px) and (max-width: 374px) {
     display: flex;
     flex-direction: column;
     justify-content: center;

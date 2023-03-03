@@ -31,6 +31,5 @@ export const NextToLearnContainer = styled.div`
     width: 260px;
     height: 243px;
     left: 14px;
-    margin-top: 300px;
   }
 `;
