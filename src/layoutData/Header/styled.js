@@ -7,7 +7,7 @@ export const Header = styled.div`
   grid-gap: 64px;
   margin-bottom: 63px;
 
-  @media (width: 375px) {
+  @media (max-width: 375px) {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
@@ -17,9 +17,16 @@ export const InfoContent = styled.div`
   margin-top: 155px;
   width: 60%;
 
-  @media (width: 375px) {
+  @media (max-width: 375px) {
     margin-left: 16px;
     margin-top: -28px;
+    width: 275px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 320px) {
+    margin-left: 16px;
+    margin-top: -1-px;
     width: 275px;
     flex-wrap: wrap;
   }
