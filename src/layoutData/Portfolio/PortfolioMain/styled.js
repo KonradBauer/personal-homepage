@@ -11,9 +11,12 @@ export const PortfolioMain = styled.div`
   left: 352px;
   top: 1333px;
 
-  @media (max-width: 376px) {
+  @media (max-width: 375px) {
     width: 375px;
     grid-template-columns: 1fr;
+    width: 288px;
+    left: 16px;
+    top: 1421px;
   }
 
   @media (width: 375px) {
@@ -42,6 +45,18 @@ export const Tile = styled.div`
   &:hover {
     border-color: ${({ theme }) => theme.color.silver};
   }
+
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    width: 288px;
+    height: 230px;
+    word-break: break;
+    flex-wrap: wrap;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -51,6 +66,18 @@ export const ContentContainer = styled.div`
   left: 0px;
   top: 0px;
   border-radius: 4px;
+
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2px;
+    width: 288px;
+    height: 230px;
+    word-break: break;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Title = styled.text`
@@ -60,6 +87,14 @@ export const Title = styled.text`
   line-height: 29px;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.scienceBlue};
+
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const Description = styled.text`
@@ -72,9 +107,17 @@ export const Description = styled.text`
   align-items: center;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.slateGray};
-`;
 
-export const Section = styled.div``;
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+  }
+`;
 
 export const Demo = styled.text`
   grid-gap: 8px;
@@ -87,6 +130,16 @@ export const Demo = styled.text`
   align-items: center;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.slateGray};
+
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const Code = styled.text`
@@ -100,6 +153,16 @@ export const Code = styled.text`
   align-items: center;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.slateGray};
+
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const Links = styled.a`
@@ -115,5 +178,16 @@ export const Links = styled.a`
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 375px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    word-break: break-word;
   }
 `;
