@@ -31,7 +31,7 @@ export const GlobalContainer = styled.div`
     margin: auto;
   }
 
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     max-width: 320px;
     margin: auto;
   }

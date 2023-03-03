@@ -22,7 +22,7 @@ export const NextToLearnContainer = styled.div`
     left: 14px;
   }
 
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -58,7 +58,7 @@ export const Tile = styled.div`
     flex-wrap: wrap;
   }
 
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,7 +90,7 @@ export const ContentContainer = styled.div`
     word-break: break;
     flex-wrap: wrap;
   }
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +118,7 @@ export const Title = styled.text`
     line-height: 19px;
     letter-spacing: 0.05em;
   }
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -147,7 +147,7 @@ export const Description = styled.text`
     align-items: center;
     letter-spacing: 0.05em;
   }
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     font-style: normal;
     font-weight: 400;
     font-size: 9px;
@@ -179,7 +179,7 @@ export const Demo = styled.text`
     align-items: center;
     letter-spacing: 0.05em;
   }
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -211,7 +211,7 @@ export const Code = styled.text`
     align-items: center;
     letter-spacing: 0.05em;
   }
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -248,7 +248,7 @@ export const Links = styled.a`
     word-break: break-word;
   }
 
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     font-style: normal;
     font-weight: 400;
     font-size: 9px;

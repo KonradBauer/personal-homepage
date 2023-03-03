@@ -33,7 +33,7 @@ export const ContainerTitle = styled.text`
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
 
-  @media (width: 375px) {
+  @media (max-width: 375px) {
     display: flex;
     flex-direction: column;
     max-width: 292px;
@@ -45,7 +45,7 @@ export const ContainerTitle = styled.text`
     letter-spacing: 0.05em;
   }
 
-  @media (width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     display: flex;
     flex-direction: column;
     max-width: 292px;
@@ -90,7 +90,7 @@ export const Skills = styled.div`
     letter-spacing: 0.05em;
   }
 
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

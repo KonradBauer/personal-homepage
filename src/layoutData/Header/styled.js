@@ -24,7 +24,7 @@ export const InfoContent = styled.div`
     flex-wrap: wrap;
   }
 
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 374px) {
     margin-left: 16px;
     margin-top: -1-px;
     width: 275px;
