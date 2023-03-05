@@ -6,7 +6,7 @@ export const ListNextToLearn = () => {
       <List>
         <ListItem>TypeScript</ListItem>
         <ListItem>React Query</ListItem>
-        <ListItem>React Context</ListItem>
+        <ListItem>React Native</ListItem>
         <ListItem>Node.js</ListItem>
         <ListItem>Cypress</ListItem>
         <ListItem>Unit testing</ListItem>
