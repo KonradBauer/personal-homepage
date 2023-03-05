@@ -10,9 +10,8 @@ export const HeaderContent = () => {
         <ThisIs>This is</ThisIs>
         <MyName>Konrad Bauer</MyName>
         <AboutMe>
-          💻 I’m a Frontend Developer in love with React, currently looking for
-          new job opportunities. Im' always ready to learn new things and
-          technologies.
+          💻 I’m a passionate Frontend Developer in love with React, currently
+          looking for new job opportunities.
         </AboutMe>
         <Button />
       </InfoContent>
