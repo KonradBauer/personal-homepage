@@ -8,6 +8,7 @@ export const ThemeContainer = styled.div`
 
 export const Button = styled.button`
   cursor: pointer;
+  border: none;
   background: none;
   display: flex;
   align-items: center;
