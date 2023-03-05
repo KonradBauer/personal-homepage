@@ -14,7 +14,7 @@ const themeSlice = createSlice({
 
 export const { switchTheme } = themeSlice.actions;
 
-const themeSliceState = (state) => state.status;
+export const themeSliceState = (state) => state.status;
 
 export const selectThemeStatus = (state) => themeSliceState(state).status;
 
