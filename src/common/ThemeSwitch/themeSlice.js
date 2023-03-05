@@ -7,13 +7,15 @@ const themeSlice = createSlice({
   },
   reducers: {
     switchTheme: (state) => {
-      state.status.false = !state.status.false;
+      state.status = !state.status;
     },
   },
 });
 
 export const { switchTheme } = themeSlice.actions;
 
-export const themeSliceState = (state) => state.status;
+const themeSliceState = (state) => state.status;
+
+export const selectThemeStatus = (state) => themeSliceState(state).status;
 
 export default themeSlice.reducer;
