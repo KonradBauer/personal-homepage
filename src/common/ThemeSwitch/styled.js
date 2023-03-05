@@ -24,8 +24,8 @@ export const Text = styled.span`
 `;
 
 export const Box = styled.span`
-  background: #d5d2d1;
-  border: 1px solid;
+  background: #e5e5e5;
+  border: 1px solid #6e7e91;
   padding: 3px;
   border-radius: 12px;
   width: 48px;
