@@ -10,6 +10,7 @@ export const ListContent = () => {
         <ListItem>CSS BEM convention</ListItem>
         <ListItem>CSS Grid</ListItem>
         <ListItem>CSS Flexbox</ListItem>
+        <ListItem>Styled components</ListItem>
         <ListItem>JavaScript: ES6+</ListItem>
         <ListItem>Promises, Async/Await</ListItem>
         <ListItem>Immutability</ListItem>
