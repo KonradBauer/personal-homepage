@@ -43,7 +43,7 @@ export const IconWrapper = styled.span`
   ${({ move }) =>
     move &&
     css`
-      transform: translateX(20px);
+      transform: translateX(28px);
     `}
 `;
 
