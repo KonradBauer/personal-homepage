@@ -4,12 +4,12 @@ export const ListNextToLearn = () => {
   return (
     <>
       <List>
-        <ListItem>React Context</ListItem>
+        <ListItem>TypeScript</ListItem>
         <ListItem>React Query</ListItem>
+        <ListItem>React Context</ListItem>
+        <ListItem>Node.js</ListItem>
         <ListItem>Cypress</ListItem>
         <ListItem>Unit testing</ListItem>
-        <ListItem>TypeScript</ListItem>
-        <ListItem>Node.js</ListItem>
       </List>
     </>
   );
