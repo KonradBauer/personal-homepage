@@ -1,3 +1,5 @@
+import { useDispatch, useSelector } from "react-redux";
+import { switchTheme, themeSliceState } from "./themeSlice";
 import {
   StyledSun,
   Box,
@@ -8,12 +10,15 @@ import {
 } from "./styled";
 
 export const ThemeSwitch = () => {
+  const dispatch = useDispatch();
+  const themeDark = useSelector(themeSliceState);
+
   return (
     <ThemeContainer>
-      <Button>
-        <Text>dark mode off</Text>
+      <Button onClick={() => dispatch(switchTheme())}>
+        <Text>dark mode {themeDark ? "on" : "off"}</Text>
         <Box>
-          <IconWrapper>
+          <IconWrapper move={themeDark}>
             <StyledSun />
           </IconWrapper>
         </Box>
