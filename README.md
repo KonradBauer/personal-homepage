@@ -4,6 +4,11 @@
 
 ## Check **[Demo](https://konradbauer.github.io/personal-homepage/)**
 
+## Screenshot
+
+![screenshot](https://github.com/KonradBauer/personal-homepage/blob/main/public/shot.png?raw=true "Page screenshot")
+
+
 ### Used technologies:
 <ol>
 <li>JavaScript (ES6)</li>
