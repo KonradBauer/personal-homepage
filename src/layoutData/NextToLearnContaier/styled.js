@@ -7,9 +7,9 @@ export const NextToLearnContainer = styled.div`
   max-width: 1216px;
   height: 170px;
   background: ${({ theme }) => theme.color.white};
-  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
-    0px 16px 58px rgba(9, 10, 51, 0.03);
+  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
+  transition: background-color 0.5s ease-in-out;
 
   @media (max-width: 375px) {
     display: flex;

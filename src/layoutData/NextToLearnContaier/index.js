@@ -1,9 +1,5 @@
 import { NextToLearnContainer } from "./styled";
-import {
-  ContainerLine,
-  ContainerTitle,
-  Skills,
-} from "../SkillsContainer/styled";
+import { ContainerLine, ContainerTitle, Skills } from "../SkillsContainer/styled";
 import { ListNextToLearn } from "./ListContent";
 
 export const NextToLearn = () => {

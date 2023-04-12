@@ -5,7 +5,6 @@ import { StyledSun, Box, Button, ThemeContainer, IconWrapper, Text } from "./sty
 export const ThemeSwitch = () => {
   const dispatch = useDispatch();
   const isDark = useSelector(selectThemeIsDark);
-  console.log(selectThemeState);
   const backgroundColor = isDark ? "#252525" : "#FBFBFE";
   document.body.style.backgroundColor = backgroundColor;
 

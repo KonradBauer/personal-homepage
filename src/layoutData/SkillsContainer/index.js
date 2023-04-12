@@ -1,11 +1,6 @@
 import React from "react";
 import { ListContent } from "./ListContent";
-import {
-  SkillsContainer,
-  ContainerTitle,
-  ContainerLine,
-  Skills,
-} from "./styled";
+import { SkillsContainer, ContainerTitle, ContainerLine, Skills } from "./styled";
 
 export const SkillsList = () => {
   return (
