@@ -22,6 +22,10 @@ export const Text = styled.span`
   text-transform: uppercase;
   font-weight: bold;
   margin-right: 12px;
+
+  @media (min-width: 280px) and (max-width: 420px) {
+    display: none;
+  }
 `;
 
 export const Box = styled.span`
