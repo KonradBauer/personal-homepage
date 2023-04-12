@@ -6,8 +6,7 @@ export const SkillsContainer = styled.div`
   height: 404px;
   margin: auto;
   padding: 32px;
-  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
-    0px 16px 58px rgba(9, 10, 51, 0.03);
+  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
 
   @media (max-width: 375px) {
@@ -80,13 +79,13 @@ export const ContainerTitle = styled.text`
   }
 `;
 
-export const ContainerLine = styled.span`
+export const ContainerLine = styled.div`
   margin: 0;
   margin-top: 15px;
   width: 1151px;
   height: 1px;
   top: 659px;
-  background: rgba(209, 213, 218, 0.3);
+  color: rgba(209, 213, 218, 0.3);
 
   @media (max-width: 375px) {
     margin-top: 0;
@@ -151,6 +150,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   margin-bottom: 8px;
+  color: ${({ theme }) => theme.color.black};
 
   &::marker {
     display: grid;

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
-export const theme = {
+export const themeLight = {
   color: {
     white: "#FFFFFF",
     mercury: "#E5E5E5",
@@ -11,13 +11,27 @@ export const theme = {
     blue: "#2517EB",
     dodgerBlue: "#2188FF",
     silver: "#C4C4C4",
+    repoTitleColor: "#0366D6",
+  },
+};
+
+export const themeDark = {
+  color: {
+    white: "#363636",
+    mercury: "#E5E5E5",
+    slateGray: "#FFFFFF",
+    black: "#FFFFFF",
+    scienceBlue: "#0366D6",
+    blue: "#2517EB",
+    dodgerBlue: "#2188FF",
+    silver: "#C4C4C4",
+    repoTitleColor: "#FFFFFF",
   },
 };
 
 export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Inter', sans-serif;
-    background: #FBFBFE;
     box-sizing: border-box;
   }
 `;

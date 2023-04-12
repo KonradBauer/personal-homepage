@@ -6,6 +6,8 @@ export const ThemeSwitch = () => {
   const dispatch = useDispatch();
   const isDark = useSelector(selectThemeIsDark);
   console.log(selectThemeState);
+  const backgroundColor = isDark ? "#252525" : "#FBFBFE";
+  document.body.style.backgroundColor = backgroundColor;
 
   return (
     <ThemeContainer>

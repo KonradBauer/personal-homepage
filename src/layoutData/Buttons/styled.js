@@ -20,7 +20,7 @@ export const ButtonHireMe = styled.button`
   line-height: 24px;
   text-align: center;
   background-color: ${({ theme }) => theme.color.scienceBlue};
-  color: ${({ theme }) => theme.color.white};
+  color: white;
   cursor: pointer;
   transition: 0.1s;
 
