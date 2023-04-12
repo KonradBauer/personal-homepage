@@ -4,7 +4,8 @@ import { StyledSun, Box, Button, ThemeContainer, IconWrapper, Text } from "./sty
 
 export const ThemeSwitch = () => {
   const dispatch = useDispatch();
-  const isDark = useSelector(selectThemeState);
+  const isDark = useSelector(selectThemeIsDark);
+  console.log(selectThemeState);
 
   return (
     <ThemeContainer>
