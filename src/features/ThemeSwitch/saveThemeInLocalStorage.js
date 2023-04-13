@@ -1,7 +1,10 @@
-const localStorageItem = "themeState";
+const localStorageKey = "themeState";
 
-export const saveThemeInLocalStorage = (tasks) =>
-  localStorage.setItem(localStorageItem, JSON.stringify(tasks));
+export const saveThemeInLocalStorage = (isDark) => {
+  localStorage.setItem(localStorageKey, JSON.stringify(isDark));
+};
 
-export const getThemeFromLocalStorage = () =>
-  JSON.parse(localStorage.getItem(localStorageItem)) || [];
+export const getThemeFromLocalStorage = () => {
+  const storedValue = localStorage.getItem(localStorageKey);
+  return storedValue !== null ? JSON.parse(storedValue) : false;
+};
