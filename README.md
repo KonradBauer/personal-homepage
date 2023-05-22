@@ -1,12 +1,12 @@
 # Personal Homepage 📇
 
-## I am Konrad, and my online business card can be described as a dynamic repository of my skills and professional aspirations. I have skills in frontend, but equally important to me are the skills I would like to develop in the future, such as React Query, React Native, TypeScript, Cypress, Node.js. It's worth mentioning that my repositories are dynamically loaded from an API, allowing for continuous updating of my skills and projects. Feel free to check out my portfolio and get in touch with me regarding collaboration. 
+## I am Konrad, and my online business card can be described as a dynamic repository of my skills and professional aspirations. You can also switch theme: light and dark mode. The theme is saved in local storage. I have skills in frontend, but equally important to me are the skills I would like to develop in the future, such as React Query, React Native, TypeScript, Cypress, Node.js. It's worth mentioning that my repositories are dynamically loaded from an API, allowing for continuous updating of my skills and projects. Feel free to check out my portfolio and get in touch with me regarding collaboration. 
 
 ## Check **[Demo](https://konradbauer.github.io/personal-homepage/)**
 
-## Screenshot
+## How it works:
 
-![screenshot](https://github.com/KonradBauer/personal-homepage/blob/main/public/shot.png?raw=true "Page screenshot")
+![screenshot](https://github.com/KonradBauer/personal-homepage/blob/main/public/shot.gif?raw=true "Page screenshot")
 
 
 ### Used technologies:
@@ -23,6 +23,7 @@
 <li>Styled components</li>
 <li>Arrow functions</li>
 <li>NPM</li>
+<li>LocalStorage (theme)</li>
 </ol>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
