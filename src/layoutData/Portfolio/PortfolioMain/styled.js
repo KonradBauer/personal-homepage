@@ -2,40 +2,40 @@ import styled from "styled-components";
 
 export const PortfolioMain = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-content: center;
   grid-gap: 32px;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 24px;
-  width: 1216px;
-  left: 352px;
-  top: 1333px;
+  max-width: 1216px;
 
-  @media (max-width: 375px) {
-    width: 375px;
+  @media (max-width: 1286px) {
     grid-template-columns: 1fr;
-    width: 288px;
-    left: 16px;
-    top: 1421px;
+    width: 100%;
   }
 
-  @media (width: 375px) {
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 24px;
+  }
+
+  @media (max-width: 375px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
 `;
 
 export const Tile = styled.div`
   height: 322px;
-  width: 592px;
-  left: 0px;
-  top: 0px;
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
   border: 6px solid rgba(209, 213, 218, 0.3);
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
@@ -46,27 +46,13 @@ export const Tile = styled.div`
   }
 
   @media (max-width: 375px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 24px;
-    width: 288px;
-    height: 230px;
-    word-break: break;
-    flex-wrap: wrap;
+    height: auto;
   }
 
   @media (min-width: 320px) and (max-width: 374px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
-    width: 250px;
-    height: 220x;
-    word-break: break;
-    flex-wrap: wrap;
+    height: auto;
   }
 `;
 
