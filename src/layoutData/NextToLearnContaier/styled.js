@@ -5,7 +5,7 @@ export const NextToLearnContainer = styled.div`
   margin-top: 72px;
   padding: 32px;
   max-width: 1216px;
-  height: 170px;
+  height: auto;
   background: ${({ theme }) => theme.color.white};
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
@@ -16,10 +16,7 @@ export const NextToLearnContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: auto;
-    width: 260px;
-    height: 243px;
-    left: 14px;
+    width: 100%;
   }
 
   @media (min-width: 320px) and (max-width: 374px) {
@@ -27,9 +24,6 @@ export const NextToLearnContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: auto;
-    width: 260px;
-    height: 243px;
-    left: 14px;
+    width: 100%;
   }
 `;
