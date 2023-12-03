@@ -1,6 +1,5 @@
 import { NextToLearnContainer } from "./styled";
-import { ContainerLine, ContainerTitle, Skills } from "../SkillsContainer/styled";
-import { ListNextToLearn } from "./ListContent";
+import { ContainerLine, ContainerTitle, List, ListItem, Skills } from "../SkillsContainer/styled";
 
 export const NextToLearn = () => {
   return (
@@ -8,7 +7,14 @@ export const NextToLearn = () => {
       <ContainerTitle>What I want to learn next 🚀</ContainerTitle>
       <ContainerLine />
       <Skills>
-        <ListNextToLearn />
+        <List>
+          <ListItem>TypeScript</ListItem>
+          <ListItem>TanStack Query</ListItem>
+          <ListItem>React Native</ListItem>
+          <ListItem>Node.js</ListItem>
+          <ListItem>Cypress</ListItem>
+          <ListItem>Unit testing</ListItem>
+        </List>
       </Skills>
     </NextToLearnContainer>
   );
