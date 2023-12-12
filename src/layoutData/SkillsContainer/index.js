@@ -2,35 +2,45 @@ import React from "react";
 import { SkillsContainer, ContainerTitle, ContainerLine, Skills, List, ListItem } from "./styled";
 
 export const SkillsList = () => {
+  const skillsData = [
+    "Teamwork",
+    "Semantic & accessible HTML",
+    "Responsive Web Design",
+    "CSS BEM convention",
+    "CSS Grid",
+    "CSS Flexbox",
+    "Styled components",
+    "JavaScript ES6+",
+    "Promises, Async/Await",
+    "Immutability",
+    "Working with API (fetch, axios)",
+    "Error handling",
+    "React",
+    "React Hooks",
+    "Redux (Toolkit)",
+    "Redux-Saga",
+    "React Router",
+    "GitHub Pull Requests & Review",
+    "Trello",
+    "Scrum",
+    "NPM",
+    "Markdown",
+    "Git",
+    "Vite",
+    "Tailwind",
+    "TypeScript",
+    "Tanstack Query",
+  ];
+
   return (
     <SkillsContainer>
       <ContainerTitle>My skillset includes 🛠️</ContainerTitle>
       <ContainerLine />
       <Skills>
         <List>
-          <ListItem>Teamwork</ListItem>
-          <ListItem>Semantic & accessible HTML</ListItem>
-          <ListItem>Responsive Web Design</ListItem>
-          <ListItem>CSS BEM convention</ListItem>
-          <ListItem>CSS Grid</ListItem>
-          <ListItem>CSS Flexbox</ListItem>
-          <ListItem>Styled components</ListItem>
-          <ListItem>JavaScript: ES6+</ListItem>
-          <ListItem>Promises, Async/Await</ListItem>
-          <ListItem>Immutability</ListItem>
-          <ListItem>Working with API (fetch, axios)</ListItem>
-          <ListItem>Error handling</ListItem>
-          <ListItem>React</ListItem>
-          <ListItem>React Hooks</ListItem>
-          <ListItem>Redux (Toolkit)</ListItem>
-          <ListItem>Redux-Saga</ListItem>
-          <ListItem>React Router</ListItem>
-          <ListItem>GitHub Pull Requests & Review</ListItem>
-          <ListItem>Trello</ListItem>
-          <ListItem>Scrum</ListItem>
-          <ListItem>NPM</ListItem>
-          <ListItem>Markdown</ListItem>
-          <ListItem>Git</ListItem>
+          {skillsData.map((skill, index) => (
+            <ListItem key={index}>{skill}</ListItem>
+          ))}
         </List>
       </Skills>
     </SkillsContainer>

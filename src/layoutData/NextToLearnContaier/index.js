@@ -1,19 +1,19 @@
+import React from "react";
 import { NextToLearnContainer } from "./styled";
 import { ContainerLine, ContainerTitle, List, ListItem, Skills } from "../SkillsContainer/styled";
 
 export const NextToLearn = () => {
+  const nextToLearnData = ["Next.js", "Node.js", "Unit testing"];
+
   return (
     <NextToLearnContainer>
       <ContainerTitle>What I want to learn next 🚀</ContainerTitle>
       <ContainerLine />
       <Skills>
         <List>
-          <ListItem>TypeScript</ListItem>
-          <ListItem>TanStack Query</ListItem>
-          <ListItem>React Native</ListItem>
-          <ListItem>Node.js</ListItem>
-          <ListItem>Cypress</ListItem>
-          <ListItem>Unit testing</ListItem>
+          {nextToLearnData.map((skill, index) => (
+            <ListItem key={index}>{skill}</ListItem>
+          ))}
         </List>
       </Skills>
     </NextToLearnContainer>
