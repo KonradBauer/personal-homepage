@@ -16,9 +16,11 @@ export const SkillsList = () => {
     "Working with API (fetch, axios)",
     "Error handling",
     "React",
+    "Next.js",
     "React Hooks",
     "Redux (Toolkit)",
     "Redux-Saga",
+    "Zustand",
     "React Router",
     "GitHub Pull Requests & Review",
     "Trello",
@@ -30,6 +32,8 @@ export const SkillsList = () => {
     "Tailwind",
     "TypeScript",
     "Tanstack Query",
+    "Swagger",
+    "Postman",
   ];
 
   return (

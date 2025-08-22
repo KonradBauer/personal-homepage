@@ -22,7 +22,7 @@ export const themeDark = {
     slateGray: "#FFFFFF",
     black: "#FFFFFF",
     scienceBlue: "#0366D6",
-    blue: "#2517EB",
+    blue: "#4A9AFF",
     dodgerBlue: "#2188FF",
     silver: "#C4C4C4",
     repoTitleColor: "#FFFFFF",
@@ -38,16 +38,26 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const GlobalContainer = styled.div`
-  width: 1216px;
+  max-width: 1216px;
   margin: auto;
+  padding: 0 16px;
 
-  @media (max-width: 375px) {
-    max-width: 375px;
-    margin: auto;
+  @media (max-width: 1248px) {
+    max-width: calc(100% - 32px);
   }
 
-  @media (min-width: 320px) and (max-width: 374px) {
-    max-width: 320px;
-    margin: auto;
+  @media (max-width: 768px) {
+    padding: 0 20px;
+    max-width: calc(100% - 40px);
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 16px;
+    max-width: calc(100% - 32px);
+  }
+
+  @media (max-width: 375px) {
+    padding: 0 12px;
+    max-width: calc(100% - 24px);
   }
 `;

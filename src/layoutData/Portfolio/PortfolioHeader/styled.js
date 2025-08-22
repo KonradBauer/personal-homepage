@@ -3,25 +3,25 @@ import styled from "styled-components";
 export const PortfolioHeadContainer = styled.div`
   text-align: center;
   margin-top: 72px;
-  height: auto;
+  margin-bottom: 24px;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    margin-top: 56px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 48px;
+    margin-bottom: 16px;
   }
 
   @media (max-width: 375px) {
-    grid-template-columns: 1fr;
     margin-top: 40px;
   }
 `;
 
 export const PortfolioHeader = styled.section`
-  margin: auto;
-  margin-top: 13px;
-  margin-bottom: 8px;
-  height: 36px;
-  left: calc(50% - 143px / 2 + 8.5px);
-  top: 1385px;
+  margin: 0 auto 8px;
   font-style: normal;
   font-weight: 900;
   font-size: 30px;
@@ -30,31 +30,41 @@ export const PortfolioHeader = styled.section`
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
 
+  @media (max-width: 768px) {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
   @media (max-width: 375px) {
-    font-style: normal;
-    font-weight: 900;
     font-size: 18px;
     line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.05em;
   }
 `;
 
 export const PortfolioSubHeader = styled.section`
-  height: 28px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 
   @media (max-width: 375px) {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 140%;
-    letter-spacing: 0.05em;
+    font-size: 14px;
   }
 `;
 

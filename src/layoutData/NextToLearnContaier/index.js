@@ -3,7 +3,7 @@ import { NextToLearnContainer } from "./styled";
 import { ContainerLine, ContainerTitle, List, ListItem, Skills } from "../SkillsContainer/styled";
 
 export const NextToLearn = () => {
-  const nextToLearnData = ["Next.js", "Node.js", "Unit testing"];
+  const nextToLearnData = [ "Node.js"];
 
   return (
     <NextToLearnContainer>

@@ -8,88 +8,105 @@ export const SocialContainer = styled.div`
   gap: 24px;
   margin-top: 120px;
   max-width: 670px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    margin-top: 80px;
+    gap: 20px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 60px;
+    gap: 16px;
+  }
 
   @media (max-width: 375px) {
-    margin: auto;
-    width: 288px;
-    height: 236px;
-    left: 16px;
-    top: 2567px;
+    margin-top: 48px;
   }
 `;
 
 export const LetsTalk = styled.text`
-  margin-top: 30px;
-  height: 10px;
+  display: block;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
   color: ${({ theme }) => theme.color.slateGray};
+  margin-bottom: 8px;
 `;
 
 export const Email = styled.text`
-  display: flex;
-  margin-top: 20px;
+  display: block;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
   line-height: 39px;
   letter-spacing: 0.05em;
-  left: calc(50% - 691px / 2 - 262.5px);
   color: ${({ theme }) => theme.color.black};
   transition: 0.1s;
+  word-break: break-all;
 
   &:hover {
     color: ${({ theme }) => theme.color.blue};
   }
 
+  @media (max-width: 768px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
   @media (max-width: 375px) {
-    font-style: normal;
-    font-weight: 900;
     font-size: 18px;
     line-height: 22px;
-    letter-spacing: 0.05em;
-    margin-top: 12px;
-    margin-bottom: -12px;
   }
 `;
 
 export const Info = styled.text`
-  width: 670px;
-  height: 75px;
-  left: calc(50% - 670px / 2 - 273px);
-  top: 2380px;
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
+  margin-bottom: 32px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
 
   @media (max-width: 375px) {
-    width: 288px;
-    display: flex;
-    flex-wrap: wrap;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.05em;
-    word-break: break-word;
+    margin-bottom: 20px;
   }
 `;
 
 export const Logos = styled.div`
   display: flex;
-  margin-top: 56px;
-  padding-bottom: 20px;
-  grid-gap: 24px;
-  left: 0.18%;
-  right: 0%;
-  top: 0.37%;
-  bottom: 0.61%;
+  gap: 24px;
+  margin-top: 24px;
+  padding-bottom: 40px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 32px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 20px;
+    padding-bottom: 24px;
+  }
 `;
 
 export const StyledGithubBlack = styled(GithubBlack)`
