@@ -47,37 +47,35 @@ export const InfoContent = styled.div`
 `;
 
 export const Photo = styled.img`
-  flex-shrink: 0;
-  margin-top: 100px;
-  height: 384px;
-  width: 384px;
-  border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 100px;
+    width: 384px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
 
-  @media (max-width: 1024px) {
-    width: 300px;
-    height: 300px;
-    margin-top: 60px;
-  }
+    @media (max-width: 1024px) {
+        width: 300px;
+        margin-top: 60px;
+    }
 
-  @media (max-width: 768px) {
-    width: 240px;
-    height: 240px;
-    margin-top: 32px;
-    align-self: flex-start;
-  }
+    @media (max-width: 768px) {
+        width: 240px;
+        margin-top: 32px;
+        align-self: flex-start;
+    }
 
-  @media (max-width: 480px) {
-    width: 180px;
-    height: 180px;
-    margin-top: 32px;
-  }
+    @media (max-width: 480px) {
+        width: 180px;
+    }
 
-  @media (max-width: 375px) {
-    width: 132px;
-    height: 132px;
-    margin-top: 32px;
-  }
+    @media (max-width: 375px) {
+        width: 132px;
+    }
 `;
+
+
 
 export const ThisIs = styled.h2`
   width: 43px;
