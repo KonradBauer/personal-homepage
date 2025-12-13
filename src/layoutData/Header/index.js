@@ -1,6 +1,6 @@
 import { Header, Photo, ThisIs, MyName, AboutMe, InfoContent } from "./styled";
 import { Button } from "../Buttons";
-import image from "../../common/images/konrad.jpg";
+import image from "../../common/images/konrad.png";
 import { ThemeSwitch } from "../../features/ThemeSwitch/theme";
 
 export const HeaderContent = () => {
