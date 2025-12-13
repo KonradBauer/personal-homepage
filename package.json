@@ -2,7 +2,7 @@
   "name": "personal-homepage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://konradbauer.github.io/personal-homepage",
+  "homepage": ".",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@tanstack/react-query": "^4.29.3",
