@@ -6,9 +6,13 @@ export const PortfolioMain = styled.div`
   grid-gap: clamp(16px, 2vw, 32px);
   margin: 0 auto;
   margin-top: clamp(16px, 1.5vw, 24px);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    grid-gap: 16px;
   }
 `;
 
@@ -22,6 +26,7 @@ export const Tile = styled.div`
   transition: border-color 0.1s;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 
   &:hover {
     border-color: ${({ theme }) => theme.color.silver};
